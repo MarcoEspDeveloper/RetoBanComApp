@@ -8,6 +8,14 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -17,9 +25,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob5-jI-5Vy">
-                                <rect key="frame" x="166" y="333.5" width="43" height="20"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PC-Ec-Cx2">
+                                <rect key="frame" x="16" y="119" width="343" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iniciar Sesión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zp-0F-1sE">
+                                <rect key="frame" x="16" y="140" width="343" height="36"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -27,8 +41,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ob5-jI-5Vy" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="KDT-aA-CVG"/>
-                            <constraint firstItem="ob5-jI-5Vy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="y0O-ae-ZGx"/>
+                            <constraint firstItem="7zp-0F-1sE" firstAttribute="top" secondItem="7PC-Ec-Cx2" secondAttribute="bottom" constant="2" id="4sM-3g-g4d"/>
+                            <constraint firstItem="7PC-Ec-Cx2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="99" id="C30-aD-D8v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7PC-Ec-Cx2" secondAttribute="trailing" constant="16" id="Lyr-cc-D5s"/>
+                            <constraint firstItem="7PC-Ec-Cx2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bky-Ju-r5J"/>
+                            <constraint firstItem="7zp-0F-1sE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="c92-LY-xqV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7zp-0F-1sE" secondAttribute="trailing" constant="16" id="t5R-Ru-HBW"/>
                         </constraints>
                     </view>
                 </viewController>
