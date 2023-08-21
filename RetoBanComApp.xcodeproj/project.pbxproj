@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A916605E2A92F878005798E3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A916605D2A92F878005798E3 /* Constants.swift */; };
 		A9571F082A92E2CF00D0C308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9571F072A92E2CF00D0C308 /* AppDelegate.swift */; };
 		A9571F0A2A92E2CF00D0C308 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9571F092A92E2CF00D0C308 /* SceneDelegate.swift */; };
-		A9571F0C2A92E2CF00D0C308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9571F0B2A92E2CF00D0C308 /* ViewController.swift */; };
-		A9571F0F2A92E2CF00D0C308 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9571F0D2A92E2CF00D0C308 /* Main.storyboard */; };
+		A9571F0C2A92E2CF00D0C308 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9571F0B2A92E2CF00D0C308 /* LoginViewController.swift */; };
+		A9571F0F2A92E2CF00D0C308 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9571F0D2A92E2CF00D0C308 /* Login.storyboard */; };
 		A9571F122A92E2CF00D0C308 /* RetoBanComApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9571F102A92E2CF00D0C308 /* RetoBanComApp.xcdatamodeld */; };
 		A9571F142A92E2CF00D0C308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9571F132A92E2CF00D0C308 /* Assets.xcassets */; };
 		A9571F172A92E2CF00D0C308 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9571F152A92E2CF00D0C308 /* LaunchScreen.storyboard */; };
@@ -39,11 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A916605D2A92F878005798E3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A9571F042A92E2CF00D0C308 /* RetoBanComApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetoBanComApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9571F072A92E2CF00D0C308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9571F092A92E2CF00D0C308 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A9571F0B2A92E2CF00D0C308 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A9571F0E2A92E2CF00D0C308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9571F0B2A92E2CF00D0C308 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A9571F0E2A92E2CF00D0C308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		A9571F112A92E2CF00D0C308 /* RetoBanComApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RetoBanComApp.xcdatamodel; sourceTree = "<group>"; };
 		A9571F132A92E2CF00D0C308 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9571F162A92E2CF00D0C308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,6 +84,93 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A91660592A92F82A005798E3 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				A916605D2A92F878005798E3 /* Constants.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		A916605A2A92F833005798E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A91660602A92F898005798E3 /* Request */,
+				A916605F2A92F88F005798E3 /* Response */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A916605B2A92F83A005798E3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A91660612A92F8C2005798E3 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A916605C2A92F866005798E3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A916605F2A92F88F005798E3 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		A91660602A92F898005798E3 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		A91660612A92F8C2005798E3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A91660652A92F8EF005798E3 /* Router */,
+				A91660632A92F8D5005798E3 /* Presenter */,
+				A91660642A92F8DE005798E3 /* Interactor */,
+				A91660622A92F8D0005798E3 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A91660622A92F8D0005798E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9571F0B2A92E2CF00D0C308 /* LoginViewController.swift */,
+				A9571F0D2A92E2CF00D0C308 /* Login.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A91660632A92F8D5005798E3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A91660642A92F8DE005798E3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A91660652A92F8EF005798E3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		A9571EFB2A92E2CF00D0C308 = {
 			isa = PBXGroup;
 			children = (
@@ -105,10 +194,12 @@
 		A9571F062A92E2CF00D0C308 /* RetoBanComApp */ = {
 			isa = PBXGroup;
 			children = (
+				A916605C2A92F866005798E3 /* Data */,
+				A916605B2A92F83A005798E3 /* Modules */,
+				A916605A2A92F833005798E3 /* Model */,
+				A91660592A92F82A005798E3 /* General */,
 				A9571F072A92E2CF00D0C308 /* AppDelegate.swift */,
 				A9571F092A92E2CF00D0C308 /* SceneDelegate.swift */,
-				A9571F0B2A92E2CF00D0C308 /* ViewController.swift */,
-				A9571F0D2A92E2CF00D0C308 /* Main.storyboard */,
 				A9571F132A92E2CF00D0C308 /* Assets.xcassets */,
 				A9571F152A92E2CF00D0C308 /* LaunchScreen.storyboard */,
 				A9571F182A92E2CF00D0C308 /* Info.plist */,
@@ -248,7 +339,7 @@
 			files = (
 				A9571F172A92E2CF00D0C308 /* LaunchScreen.storyboard in Resources */,
 				A9571F142A92E2CF00D0C308 /* Assets.xcassets in Resources */,
-				A9571F0F2A92E2CF00D0C308 /* Main.storyboard in Resources */,
+				A9571F0F2A92E2CF00D0C308 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +364,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9571F0C2A92E2CF00D0C308 /* ViewController.swift in Sources */,
+				A916605E2A92F878005798E3 /* Constants.swift in Sources */,
+				A9571F0C2A92E2CF00D0C308 /* LoginViewController.swift in Sources */,
 				A9571F122A92E2CF00D0C308 /* RetoBanComApp.xcdatamodeld in Sources */,
 				A9571F082A92E2CF00D0C308 /* AppDelegate.swift in Sources */,
 				A9571F0A2A92E2CF00D0C308 /* SceneDelegate.swift in Sources */,
@@ -313,12 +405,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A9571F0D2A92E2CF00D0C308 /* Main.storyboard */ = {
+		A9571F0D2A92E2CF00D0C308 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A9571F0E2A92E2CF00D0C308 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		A9571F152A92E2CF00D0C308 /* LaunchScreen.storyboard */ = {
@@ -457,8 +549,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RetoBanComApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -486,8 +578,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RetoBanComApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
