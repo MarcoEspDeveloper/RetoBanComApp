@@ -163,6 +163,7 @@
 			children = (
 				A95177B22A9522A800A9186B /* Users */,
 				A91660612A92F8C2005798E3 /* Login */,
+				A9571F0D2A92E2CF00D0C308 /* Login.storyboard */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -208,7 +209,6 @@
 			children = (
 				A9571F0B2A92E2CF00D0C308 /* LoginViewController.swift */,
 				A95177B82A95244300A9186B /* LoginViewProtocol.swift */,
-				A9571F0D2A92E2CF00D0C308 /* Login.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -260,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				A95177B32A9522C000A9186B /* View */,
+				A95177B42A9522F800A9186B /* Users.storyboard */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -267,7 +268,6 @@
 		A95177B32A9522C000A9186B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A95177B42A9522F800A9186B /* Users.storyboard */,
 				A95177B62A9523B900A9186B /* UsersViewController.swift */,
 			);
 			path = View;

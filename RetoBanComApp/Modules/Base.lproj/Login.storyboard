@@ -40,7 +40,7 @@
                                 <rect key="frame" x="16" y="207" width="343" height="54.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Ft-d2-Xce">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="54.5"/>
+                                        <rect key="frame" x="10" y="0.0" width="333" height="54.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                                         <connections>
@@ -51,7 +51,7 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="1Ft-d2-Xce" secondAttribute="trailing" id="3FK-v0-ZKc"/>
                                     <constraint firstAttribute="bottom" secondItem="1Ft-d2-Xce" secondAttribute="bottom" id="BpK-C8-u5f"/>
-                                    <constraint firstItem="1Ft-d2-Xce" firstAttribute="leading" secondItem="A9S-X7-h57" secondAttribute="leading" id="CY3-T3-gbH"/>
+                                    <constraint firstItem="1Ft-d2-Xce" firstAttribute="leading" secondItem="A9S-X7-h57" secondAttribute="leading" constant="10" id="CY3-T3-gbH"/>
                                     <constraint firstAttribute="height" constant="54.5" id="DiG-Ob-lTz"/>
                                     <constraint firstItem="1Ft-d2-Xce" firstAttribute="top" secondItem="A9S-X7-h57" secondAttribute="top" id="o3F-fO-Pd1"/>
                                 </constraints>
@@ -67,7 +67,7 @@
                                 <rect key="frame" x="16" y="290" width="343" height="54.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jdp-lM-cAo">
-                                        <rect key="frame" x="0.0" y="0.0" width="287" height="54"/>
+                                        <rect key="frame" x="10" y="0.0" width="277" height="54"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
@@ -99,7 +99,7 @@
                                     <constraint firstItem="2iR-Tt-pFO" firstAttribute="leading" secondItem="jdp-lM-cAo" secondAttribute="trailing" id="Udm-1o-eNO"/>
                                     <constraint firstItem="2iR-Tt-pFO" firstAttribute="top" secondItem="v1L-jp-m2E" secondAttribute="top" id="Why-pc-rxj"/>
                                     <constraint firstItem="jdp-lM-cAo" firstAttribute="top" secondItem="v1L-jp-m2E" secondAttribute="top" id="hgZ-8d-HT4"/>
-                                    <constraint firstItem="jdp-lM-cAo" firstAttribute="leading" secondItem="v1L-jp-m2E" secondAttribute="leading" id="iwh-Lk-pf0"/>
+                                    <constraint firstItem="jdp-lM-cAo" firstAttribute="leading" secondItem="v1L-jp-m2E" secondAttribute="leading" constant="10" id="iwh-Lk-pf0"/>
                                     <constraint firstAttribute="bottom" secondItem="jdp-lM-cAo" secondAttribute="bottom" constant="0.5" id="jX4-xH-4dJ"/>
                                     <constraint firstItem="us1-mN-3jc" firstAttribute="leading" secondItem="jdp-lM-cAo" secondAttribute="trailing" constant="16" id="qS9-Hk-e8h"/>
                                     <constraint firstAttribute="trailing" secondItem="us1-mN-3jc" secondAttribute="trailing" constant="16" id="yWT-UZ-bBk"/>
@@ -129,8 +129,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_selection_box" translatesAutoresizingMaskIntoConstraints="NO" id="Bxq-Zk-LAE">
                                 <rect key="frame" x="16" y="388.5" width="20" height="20"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recordar correo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4I-JZ-2X3">
-                                <rect key="frame" x="44" y="390" width="100" height="16.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Recordar correo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4I-JZ-2X3">
+                                <rect key="frame" x="44" y="390" width="105" height="17"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                 <color key="textColor" red="0.1764705882352941" green="0.21568627450980393" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
