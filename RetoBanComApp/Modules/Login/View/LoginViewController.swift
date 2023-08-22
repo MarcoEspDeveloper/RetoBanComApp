@@ -16,11 +16,17 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var signWithGoogleButton: UIButton!
     
+    var presenter: LoginPresenterProtocol?
+    var configurator: LoginConfiguratorProtocol?
+    
     var isSecurePass = true
     var isRememberEmail = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.configurator = LoginConfigurator()
+        configurator?.configure(viewController: self)
         
         self.setupView()
     }
@@ -62,7 +68,7 @@ extension LoginViewController {
     
     @IBAction func tapLoginButton(_ sender: Any) {
         
-        
+        self.presenter?.goToValidateUser(userName: self.emailTextField.text ?? "", userPassword: self.passwordTextField.text ?? "")
     }
     
     @IBAction func tapLoginGoogleButton(_ sender: Any) {
@@ -78,6 +84,15 @@ extension LoginViewController: UITextFieldDelegate {
         view.endEditing(true)
         
         return false
+    }
+}
+
+extension LoginViewController: LoginViewProtocol {
+    
+    func showBasicAlert(title: String?, message: String?){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

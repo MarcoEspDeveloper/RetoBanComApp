@@ -6,3 +6,14 @@
 //
 
 import Foundation
+import Alamofire
+
+class ConnectionManager: ConnectionManagerProtocol {
+    
+    func getUsersList(page: Int, handler: @escaping ([UserResponse]?, NSError?) -> Void) {
+        
+        
+    }
+    
+    
+}

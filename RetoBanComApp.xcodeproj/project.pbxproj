@@ -33,6 +33,9 @@
 		A95177C02A9525E500A9186B /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95177BF2A9525E500A9186B /* ConnectionManager.swift */; };
 		A95177C22A9525F400A9186B /* ConnectionManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95177C12A9525F400A9186B /* ConnectionManagerProtocol.swift */; };
 		A95177C62A95272000A9186B /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95177C52A95272000A9186B /* UserResponse.swift */; };
+		A95177C92A952D6200A9186B /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95177C82A952D6200A9186B /* LoginConfigurator.swift */; };
+		A95177CB2A952D6D00A9186B /* LoginConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95177CA2A952D6D00A9186B /* LoginConfiguratorProtocol.swift */; };
+		A95177CD2A952F5900A9186B /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95177CC2A952F5900A9186B /* UserData.swift */; };
 		A9571F082A92E2CF00D0C308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9571F072A92E2CF00D0C308 /* AppDelegate.swift */; };
 		A9571F0A2A92E2CF00D0C308 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9571F092A92E2CF00D0C308 /* SceneDelegate.swift */; };
 		A9571F0C2A92E2CF00D0C308 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9571F0B2A92E2CF00D0C308 /* LoginViewController.swift */; };
@@ -91,6 +94,9 @@
 		A95177BF2A9525E500A9186B /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 		A95177C12A9525F400A9186B /* ConnectionManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManagerProtocol.swift; sourceTree = "<group>"; };
 		A95177C52A95272000A9186B /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		A95177C82A952D6200A9186B /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		A95177CA2A952D6D00A9186B /* LoginConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfiguratorProtocol.swift; sourceTree = "<group>"; };
+		A95177CC2A952F5900A9186B /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		A9571F042A92E2CF00D0C308 /* RetoBanComApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetoBanComApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9571F072A92E2CF00D0C308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9571F092A92E2CF00D0C308 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +153,7 @@
 			children = (
 				A91660602A92F898005798E3 /* Request */,
 				A916605F2A92F88F005798E3 /* Response */,
+				A95177CC2A952F5900A9186B /* UserData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,6 +194,7 @@
 		A91660612A92F8C2005798E3 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				A95177C72A952D5400A9186B /* Configurator */,
 				A91660652A92F8EF005798E3 /* Router */,
 				A91660632A92F8D5005798E3 /* Presenter */,
 				A91660642A92F8DE005798E3 /* Interactor */,
@@ -272,6 +280,15 @@
 				A95177C12A9525F400A9186B /* ConnectionManagerProtocol.swift */,
 			);
 			path = Connection;
+			sourceTree = "<group>";
+		};
+		A95177C72A952D5400A9186B /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				A95177C82A952D6200A9186B /* LoginConfigurator.swift */,
+				A95177CA2A952D6D00A9186B /* LoginConfiguratorProtocol.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 		A9571EFB2A92E2CF00D0C308 = {
@@ -506,16 +523,19 @@
 				A95177B72A9523B900A9186B /* UsersViewController.swift in Sources */,
 				A95177B92A95244300A9186B /* LoginViewProtocol.swift in Sources */,
 				A9571F0C2A92E2CF00D0C308 /* LoginViewController.swift in Sources */,
+				A95177C92A952D6200A9186B /* LoginConfigurator.swift in Sources */,
 				A9571F122A92E2CF00D0C308 /* RetoBanComApp.xcdatamodeld in Sources */,
 				A95177C22A9525F400A9186B /* ConnectionManagerProtocol.swift in Sources */,
 				A95177AD2A95220900A9186B /* UserRequest.swift in Sources */,
 				A9571F082A92E2CF00D0C308 /* AppDelegate.swift in Sources */,
 				A9571F0A2A92E2CF00D0C308 /* SceneDelegate.swift in Sources */,
+				A95177CB2A952D6D00A9186B /* LoginConfiguratorProtocol.swift in Sources */,
 				A95177C02A9525E500A9186B /* ConnectionManager.swift in Sources */,
 				A92728D42A944D2700774B09 /* LoginPresenterProtocol.swift in Sources */,
 				A95177BB2A95257700A9186B /* LoginRouter.swift in Sources */,
 				A95177BD2A95258100A9186B /* LoginRouterProtocol.swift in Sources */,
 				A95177AF2A95224300A9186B /* LoginInteractor.swift in Sources */,
+				A95177CD2A952F5900A9186B /* UserData.swift in Sources */,
 				A95177C62A95272000A9186B /* UserResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

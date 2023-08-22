@@ -9,5 +9,5 @@ import Foundation
 
 protocol LoginInteractorProtocol {
     
-    func getUserValidation(uaserLoginInfo: UserRequest) -> Bool
+    func getUserValidation(userLoginInfo: UserRequest) -> Bool
 }
