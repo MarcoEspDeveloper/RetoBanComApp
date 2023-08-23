@@ -9,5 +9,5 @@ import Foundation
 
 protocol ConnectionManagerProtocol {
     
-    func getUsersList(page: Int, handler: @escaping ([UserResponse]?, NSError?) -> Void)
+    func getUsersList(handler: @escaping ([UserResponse]?, NSError?) -> Void)
 }

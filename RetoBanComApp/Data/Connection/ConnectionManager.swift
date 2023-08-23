@@ -10,7 +10,7 @@ import Alamofire
 
 class ConnectionManager: ConnectionManagerProtocol {
     
-    func getUsersList(page: Int, handler: @escaping ([UserResponse]?, NSError?) -> Void) {
+    func getUsersList(handler: @escaping ([UserResponse]?, NSError?) -> Void) {
         
         let url = "\(Constants.ConnectionUrl.baseUrl)\(Constants.ConnectionUrl.usersUrl)"
             
@@ -47,6 +47,4 @@ class ConnectionManager: ConnectionManagerProtocol {
             }
         }
     }
-    
-    
 }

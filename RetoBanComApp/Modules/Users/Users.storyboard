@@ -9,6 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf">
+            <string>NunitoSans-12ptExtraLight_Regular</string>
+        </array>
         <array key="Roboto-Bold.ttf">
             <string>Roboto-Bold</string>
         </array>
@@ -28,14 +31,64 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="48" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="MKa-Js-hkb">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="UsersTableViewCell" rowHeight="48" id="kQS-93-dhh" customClass="UsersTableViewCell" customModule="RetoBanComApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="48"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kQS-93-dhh" id="QzS-C3-Pdy">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Usuario" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCS-Hh-vJF">
+                                                    <rect key="frame" x="136.5" y="14.5" width="102.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="NunitoSans-12ptExtraLight_Regular" family="Nunito Sans" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vkp-yh-YiN">
+                                                    <rect key="frame" x="0.0" y="47" width="375" height="1"/>
+                                                    <color key="backgroundColor" red="0.90196078431372551" green="0.90588235294117647" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="6kK-tw-eGd"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Vkp-yh-YiN" secondAttribute="bottom" id="I1p-JK-QUb"/>
+                                            <constraint firstItem="FCS-Hh-vJF" firstAttribute="centerY" secondItem="kQS-93-dhh" secondAttribute="centerY" id="Vsm-ci-oQd"/>
+                                            <constraint firstItem="Vkp-yh-YiN" firstAttribute="leading" secondItem="kQS-93-dhh" secondAttribute="leading" id="mhT-wn-Pa5"/>
+                                            <constraint firstItem="FCS-Hh-vJF" firstAttribute="centerX" secondItem="kQS-93-dhh" secondAttribute="centerX" id="oyE-jo-g3E"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vkp-yh-YiN" secondAttribute="trailing" id="rVu-CO-4WI"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="userNameLabel" destination="FCS-Hh-vJF" id="feD-A4-aYA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="bGs-aA-Zm0"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="w7Z-Jv-I9f"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="MKa-Js-hkb" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="JGn-ZO-Lmy"/>
                             <constraint firstItem="AwL-z0-qAe" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="Leo-Ec-NJS"/>
+                            <constraint firstItem="MKa-Js-hkb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="NTw-0E-Pdk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="MKa-Js-hkb" secondAttribute="bottom" id="Y76-ac-zZb"/>
                             <constraint firstItem="AwL-z0-qAe" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="kZj-rf-mqy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MKa-Js-hkb" secondAttribute="trailing" id="z4a-rx-LGZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="usersTableView" destination="MKa-Js-hkb" id="VIT-EL-nPn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
