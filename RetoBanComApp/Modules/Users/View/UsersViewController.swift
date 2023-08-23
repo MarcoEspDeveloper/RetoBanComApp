@@ -6,17 +6,29 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class UsersViewController: UIViewController {
 
     @IBOutlet weak var usersTableView: UITableView!
     
+    var presenter: UsersPresenterProtocol?
+    var configurator: UsersConfiguratorProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.configurator = UsersConfigurator()
+        configurator?.configure(viewController: self)
 
         self.setupView()
+        
+        DispatchQueue.main.async {
+            MBProgressHUD.showAdded(to: self.view, animated: true)
+        }
+        
+        self.presenter?.getUsersList()
     }
-
 }
 
 extension UsersViewController {
@@ -34,12 +46,22 @@ extension UsersViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         
-        return 3
+        if let usersList = self.presenter?.getUsers() {
+            
+            return usersList.count
+        }
+        
+        return 0
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
+        var user = self.presenter?.getUsers()[section]
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "UsersTableViewCell") as! UsersTableViewCell
+        
+        cell.setupCell(userName: user?.name)
+        cell.selectionStyle = .none
         
         return cell
     }
@@ -57,5 +79,28 @@ extension UsersViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
         return 48
+    }
+}
+
+extension UsersViewController: UsersViewProtocol {
+    
+    func showBasicAlert(title: String?, message: String?) {
+        
+        DispatchQueue.main.async {
+            MBProgressHUD.hide(for: self.view, animated: true)
+        }
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func showUsersList() {
+        
+        DispatchQueue.main.async {
+            MBProgressHUD.hide(for: self.view, animated: true)
+        }
+        
+        self.usersTableView.reloadData()
     }
 }

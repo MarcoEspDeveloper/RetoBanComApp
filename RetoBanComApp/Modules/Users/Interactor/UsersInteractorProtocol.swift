@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol UsersInteractorProtocol {
+    
+    func getUsersList()
+}

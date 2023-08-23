@@ -26,8 +26,8 @@ class UsersTableViewCell: UITableViewCell {
 
 extension UsersTableViewCell {
     
-    func setupCell(userName: String) {
+    func setupCell(userName: String?) {
         
-        self.userNameLabel.text = userName
+        self.userNameLabel.text = userName ?? ""
     }
 }

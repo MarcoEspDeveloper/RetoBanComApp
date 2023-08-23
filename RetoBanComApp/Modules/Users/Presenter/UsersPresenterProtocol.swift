@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+protocol UsersPresenterProtocol {
+    
+    func getUsersList()
+    func didGetMovieList(usersList: [UserResponse])
+    func failGetUsersList(error: NSError)
+    func getUsers() -> [UserResponse]
+}

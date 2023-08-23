@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+class UsersConfigurator: UsersConfiguratorProtocol {
+    
+    func configure(viewController: UsersViewController) {
+        
+        viewController.presenter = UsersPresenter(view: viewController)
+    }
+}

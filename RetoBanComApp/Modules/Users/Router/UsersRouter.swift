@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+class UsersRouter {
+    
+    private weak var usersViewProtocol: UsersViewProtocol!
+    
+    init(withView view: UsersViewProtocol) {
+        self.usersViewProtocol = view
+    }
+}
+
+extension UsersRouter: UsersRouterProtocol {
+    
+    
+}

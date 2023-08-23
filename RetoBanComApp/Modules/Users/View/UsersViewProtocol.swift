@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+protocol UsersViewProtocol: AnyObject {
+    
+    func showBasicAlert(title:String?, message: String?)
+    func showUsersList()
+}

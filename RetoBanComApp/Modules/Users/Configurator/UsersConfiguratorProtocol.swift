@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol UsersConfiguratorProtocol {
+    
+    func configure(viewController: UsersViewController)
+}
