@@ -26,7 +26,12 @@ class UsersPresenter: UsersPresenterProtocol {
         self.interactor?.getUsersList()
     }
     
-    func didGetMovieList(usersList: [UserResponse]) {
+    func getUserPostsList(userId: Int64) {
+        
+        self.interactor?.getUserPostsList(userId: userId)
+    }
+    
+    func didGetUsersList(usersList: [UserResponse]) {
         
         self.usersList.append(contentsOf: usersList)
         self.usersView.showUsersList()
@@ -34,7 +39,23 @@ class UsersPresenter: UsersPresenterProtocol {
     
     func failGetUsersList(error: NSError) {
         
-        self.usersList.removeAll()
+        self.usersView.showBasicAlert(title: "Error", message: error.localizedDescription)
+    }
+    
+    func didGetUserPostsList(usersList: [UserPostResponse]) {
+        
+        if let userId = usersList.first?.userId {
+            
+            if let index = self.usersList.firstIndex(where: { $0.id == userId }) {
+                
+                self.usersList[index].userPosts = usersList
+                
+                print("CANTIDAD DE POSTS DEL USUARIO \((self.usersList[index].name)!): \(self.usersList[index].userPosts?.count ?? 0)")
+            }
+        }
+    }
+    
+    func failGetUserPostsList(error: NSError) {
         
         self.usersView.showBasicAlert(title: "Error", message: error.localizedDescription)
     }

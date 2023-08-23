@@ -10,4 +10,5 @@ import Foundation
 protocol UsersInteractorProtocol {
     
     func getUsersList()
+    func getUserPostsList(userId: Int64)
 }

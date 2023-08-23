@@ -17,6 +17,7 @@ struct UserResponse: Decodable {
     var phone: String?
     var website: String?
     var company: CompanyUserResponse?
+    var userPosts: [UserPostResponse]?
 }
 
 struct GeoUserResponse: Decodable {

@@ -8,6 +8,10 @@
 import UIKit
 import MBProgressHUD
 
+protocol UsersViewDelegate {
+    func callGetUserLists(userId: Int64)
+}
+
 class UsersViewController: UIViewController {
 
     @IBOutlet weak var usersTableView: UITableView!
@@ -60,7 +64,7 @@ extension UsersViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "UsersTableViewCell") as! UsersTableViewCell
         
-        cell.setupCell(userName: user?.name)
+        cell.setupCell(delegate: self, userId: user?.id, userName: user?.name)
         cell.selectionStyle = .none
         
         return cell
@@ -102,5 +106,17 @@ extension UsersViewController: UsersViewProtocol {
         }
         
         self.usersTableView.reloadData()
+    }
+    
+    func showUserPosts() {
+        
+    }
+}
+
+extension UsersViewController: UsersViewDelegate {
+    
+    func callGetUserLists(userId: Int64) {
+        
+        self.presenter?.getUserPostsList(userId: userId)
     }
 }

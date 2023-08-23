@@ -10,4 +10,5 @@ import Foundation
 protocol ConnectionManagerProtocol {
     
     func getUsersList(handler: @escaping ([UserResponse]?, NSError?) -> Void)
+    func getUserPostsList(userId: Int64, handler: @escaping ([UserPostResponse]?, NSError?) -> Void)
 }

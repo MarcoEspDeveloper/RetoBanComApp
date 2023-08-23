@@ -59,6 +59,7 @@
 		A974AB182A956806005E7974 /* UsersConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A974AB172A956806005E7974 /* UsersConfiguratorProtocol.swift */; };
 		A974AC602A956DAA005E7974 /* NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A974ABBC2A956DAA005E7974 /* NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf */; };
 		A974AC612A956DAA005E7974 /* NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A974ABBD2A956DAA005E7974 /* NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf */; };
+		A9A2F1052A9680DA0057F39C /* UserPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2F1042A9680DA0057F39C /* UserPostResponse.swift */; };
 		A9DB56752A95720F00F36F64 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB56742A95720F00F36F64 /* UsersTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -134,6 +135,7 @@
 		A974AB172A956806005E7974 /* UsersConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		A974ABBC2A956DAA005E7974 /* NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf"; sourceTree = "<group>"; };
 		A974ABBD2A956DAA005E7974 /* NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf"; sourceTree = "<group>"; };
+		A9A2F1042A9680DA0057F39C /* UserPostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostResponse.swift; sourceTree = "<group>"; };
 		A9DB56742A95720F00F36F64 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,6 +204,7 @@
 		A916605F2A92F88F005798E3 /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				A9A2F1042A9680DA0057F39C /* UserPostResponse.swift */,
 				A95177C52A95272000A9186B /* UserResponse.swift */,
 			);
 			path = Response;
@@ -612,6 +615,7 @@
 				A95177B72A9523B900A9186B /* UsersViewController.swift in Sources */,
 				A95177B92A95244300A9186B /* LoginViewProtocol.swift in Sources */,
 				A974AB142A9567E7005E7974 /* UsersRouterProtocol.swift in Sources */,
+				A9A2F1052A9680DA0057F39C /* UserPostResponse.swift in Sources */,
 				A9571F0C2A92E2CF00D0C308 /* LoginViewController.swift in Sources */,
 				A95177C92A952D6200A9186B /* LoginConfigurator.swift in Sources */,
 				A974AB102A956781005E7974 /* UsersPresenterProtocol.swift in Sources */,

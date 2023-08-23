@@ -26,12 +26,30 @@ class UsersInteractor: UsersInteractorProtocol {
             
             if let usersResponse = response {
                 
-                self.presenter?.didGetMovieList(usersList: usersResponse)
+                self.presenter?.didGetUsersList(usersList: usersResponse)
             }
             
             if let error = error {
                 
                 self.presenter?.failGetUsersList(error: error)
+            }
+        }
+    }
+    
+    func getUserPostsList(userId: Int64) {
+        
+        connectionManager = ConnectionManager()
+        
+        connectionManager?.getUserPostsList(userId: userId) { (response, error) in
+            
+            if let userPostsResponse = response {
+                
+                self.presenter?.didGetUserPostsList(usersList: userPostsResponse)
+            }
+            
+            if let error = error {
+                
+                self.presenter?.failGetUserPostsList(error: error)
             }
         }
     }

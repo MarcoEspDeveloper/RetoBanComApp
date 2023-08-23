@@ -10,7 +10,11 @@ import Foundation
 protocol UsersPresenterProtocol {
     
     func getUsersList()
-    func didGetMovieList(usersList: [UserResponse])
+    func didGetUsersList(usersList: [UserResponse])
     func failGetUsersList(error: NSError)
+    
+    func getUserPostsList(userId: Int64)
+    func didGetUserPostsList(usersList: [UserPostResponse])
+    func failGetUserPostsList(error: NSError)
     func getUsers() -> [UserResponse]
 }

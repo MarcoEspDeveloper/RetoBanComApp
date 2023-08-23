@@ -10,10 +10,16 @@ import UIKit
 class UsersTableViewCell: UITableViewCell {
 
     @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var actionView: UIView!
+    
+    var delegate: UsersViewDelegate?
+    
+    var userId: Int64 = -1
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        self.setupAction()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -26,8 +32,20 @@ class UsersTableViewCell: UITableViewCell {
 
 extension UsersTableViewCell {
     
-    func setupCell(userName: String?) {
+    func setupAction() {
         
+        self.actionView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(goToGetUserPostsList)))
+    }
+    
+    @objc func goToGetUserPostsList() {
+        
+        self.delegate?.callGetUserLists(userId: self.userId)
+    }
+    
+    func setupCell(delegate: UsersViewDelegate?, userId: Int64?, userName: String?) {
+        
+        self.delegate = delegate
+        self.userId = userId ?? -1
         self.userNameLabel.text = userName ?? ""
     }
 }

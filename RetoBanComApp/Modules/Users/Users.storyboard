@@ -54,17 +54,25 @@
                                                         <constraint firstAttribute="height" constant="1" id="6kK-tw-eGd"/>
                                                     </constraints>
                                                 </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAi-CE-ewI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                                                </view>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </tableViewCellContentView>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="NAi-CE-ewI" secondAttribute="trailing" id="AjG-j3-88p"/>
                                             <constraint firstAttribute="bottom" secondItem="Vkp-yh-YiN" secondAttribute="bottom" id="I1p-JK-QUb"/>
+                                            <constraint firstItem="NAi-CE-ewI" firstAttribute="top" secondItem="kQS-93-dhh" secondAttribute="top" id="KFM-CK-luX"/>
                                             <constraint firstItem="FCS-Hh-vJF" firstAttribute="centerY" secondItem="kQS-93-dhh" secondAttribute="centerY" id="Vsm-ci-oQd"/>
+                                            <constraint firstItem="NAi-CE-ewI" firstAttribute="leading" secondItem="kQS-93-dhh" secondAttribute="leading" id="dnY-wX-iPI"/>
                                             <constraint firstItem="Vkp-yh-YiN" firstAttribute="leading" secondItem="kQS-93-dhh" secondAttribute="leading" id="mhT-wn-Pa5"/>
+                                            <constraint firstAttribute="bottom" secondItem="NAi-CE-ewI" secondAttribute="bottom" id="o0j-co-VgH"/>
                                             <constraint firstItem="FCS-Hh-vJF" firstAttribute="centerX" secondItem="kQS-93-dhh" secondAttribute="centerX" id="oyE-jo-g3E"/>
                                             <constraint firstAttribute="trailing" secondItem="Vkp-yh-YiN" secondAttribute="trailing" id="rVu-CO-4WI"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="actionView" destination="NAi-CE-ewI" id="Gb0-Uv-Yss"/>
                                             <outlet property="userNameLabel" destination="FCS-Hh-vJF" id="feD-A4-aYA"/>
                                         </connections>
                                     </tableViewCell>
