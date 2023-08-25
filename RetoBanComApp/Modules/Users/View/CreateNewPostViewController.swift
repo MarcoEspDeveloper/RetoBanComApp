@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class CreateNewPostViewController: UIViewController {
 
@@ -17,6 +18,8 @@ class CreateNewPostViewController: UIViewController {
     
     var presenter: CreateNewPostPresenterProtocol?
     var configurator: CreateNewPostConfiguratorProtocol?
+    
+    var delegate: UsersViewDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +60,10 @@ extension CreateNewPostViewController {
     
     @IBAction func tapCreatePostButton(_ sender: Any) {
         
+        DispatchQueue.main.async {
+            MBProgressHUD.showAdded(to: self.view, animated: true)
+        }
+        
         self.presenter?.createNewPost(userId: 1, postTitle: self.titleTextField.text ?? "", postDescription: descriptionTextField.text ?? "")
     }
 }
@@ -73,5 +80,20 @@ extension CreateNewPostViewController: UITextFieldDelegate {
 
 extension CreateNewPostViewController: CreateNewPostViewProtocol {
     
+    func showNewPostToBack(userPost: UserPostResponse) {
+        
+        self.delegate?.callGetNewCreatedPost(userPost: userPost)
+        self.presenter?.goToBack()
+    }
     
+    func showBasicAlert(title: String?, message: String?) {
+        
+        DispatchQueue.main.async {
+            MBProgressHUD.hide(for: self.view, animated: true)
+        }
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 }

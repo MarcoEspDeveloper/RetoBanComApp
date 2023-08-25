@@ -11,5 +11,6 @@ protocol UsersViewProtocol: AnyObject {
     
     func showBasicAlert(title:String?, message: String?)
     func showUsersList()
+    func showNewUserPost()
     func showUserPosts(userId: Int64)
 }

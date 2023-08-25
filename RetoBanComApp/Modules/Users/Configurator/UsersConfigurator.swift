@@ -9,8 +9,8 @@ import Foundation
 
 class UsersConfigurator: UsersConfiguratorProtocol {
     
-    func configure(viewController: UsersViewController) {
+    func configure(viewController: UsersViewController, delegate: UsersViewDelegate) {
         
-        viewController.presenter = UsersPresenter(view: viewController)
+        viewController.presenter = UsersPresenter(view: viewController, delegate: delegate)
     }
 }

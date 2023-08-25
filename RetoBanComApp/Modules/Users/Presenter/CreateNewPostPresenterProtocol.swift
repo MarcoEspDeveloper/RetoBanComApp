@@ -10,6 +10,8 @@ import Foundation
 protocol CreateNewPostPresenterProtocol {
 
     func createNewPost(userId: Int64, postTitle: String, postDescription: String)
+    func didGetCreatePost(userPost: UserPostResponse)
+    func failGetCreatePost(error: NSError)
     
     func goToBack()
 }

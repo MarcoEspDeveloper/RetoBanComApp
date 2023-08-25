@@ -26,6 +26,16 @@ class CreateNewPostPresenter: CreateNewPostPresenterProtocol {
         self.interactor?.postCreateNewPost(userId: userId, postTitle: postTitle, postDescription: postDescription)
     }
     
+    func didGetCreatePost(userPost: UserPostResponse) {
+        
+        self.createNewPostView.showNewPostToBack(userPost: userPost)
+    }
+    
+    func failGetCreatePost(error: NSError) {
+        
+        self.createNewPostView.showBasicAlert(title: "Error", message: error.localizedDescription)
+    }
+    
     func goToBack() {
         
         self.router?.goToBack(originViewController: createNewPostView as! CreateNewPostViewController)

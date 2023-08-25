@@ -15,7 +15,9 @@ class UsersPresenter: UsersPresenterProtocol {
     
     var usersList: [UserResponse] = []
     
-    init(view: UsersViewProtocol) {
+    var delegate: UsersViewDelegate?
+    
+    init(view: UsersViewProtocol, delegate: UsersViewDelegate) {
         self.usersView = view
         self.interactor = UsersInteractor(presenter: self)
         self.router = UsersRouter(withView: self.usersView)
@@ -46,12 +48,10 @@ class UsersPresenter: UsersPresenterProtocol {
         
         if let userId = userPostsList.first?.userId, let index = self.usersList.firstIndex(where: { $0.id == userId }) {
             
-            self.usersList[index].userPosts?.removeAll()
+            // self.usersList[index].userPosts?.removeAll()
             self.usersList[index].userPosts?.append(contentsOf: userPostsList)
             
             self.usersView.showUserPosts(userId: userId)
-            
-            //print("CANTIDAD DE POSTS DEL USUARIO \((self.usersList[index].name)!): \(self.usersList[index].userPosts?.count ?? 0)")
         }
     }
     
@@ -87,8 +87,17 @@ class UsersPresenter: UsersPresenterProtocol {
         return self.usersList
     }
     
-    func goToCreateNewPost() {
+    func setNewPost(userPost: UserPostResponse) {
         
-        self.router?.goToCreateNewPost(originViewController: usersView as! UsersViewController)
+        if let index = self.usersList.firstIndex(where: { $0.id == userPost.userId }) {
+            
+            self.usersList[index].userPosts?.insert(userPost, at: 0)
+            self.usersView.showNewUserPost()
+        }
+    }
+    
+    func goToCreateNewPost(delegate: UsersViewDelegate) {
+        
+        self.router?.goToCreateNewPost(originViewController: usersView as! UsersViewController, delegate: delegate)
     }
 }

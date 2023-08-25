@@ -9,5 +9,5 @@ import Foundation
 
 protocol UsersConfiguratorProtocol {
     
-    func configure(viewController: UsersViewController)
+    func configure(viewController: UsersViewController, delegate: UsersViewDelegate)
 }

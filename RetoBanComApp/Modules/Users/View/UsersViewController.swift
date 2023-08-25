@@ -10,6 +10,7 @@ import MBProgressHUD
 
 protocol UsersViewDelegate {
     func callGetUserLists(userId: Int64)
+    func callGetNewCreatedPost(userPost: UserPostResponse)
 }
 
 class UsersViewController: UIViewController {
@@ -23,7 +24,7 @@ class UsersViewController: UIViewController {
         super.viewDidLoad()
         
         self.configurator = UsersConfigurator()
-        configurator?.configure(viewController: self)
+        configurator?.configure(viewController: self, delegate: self)
 
         self.setupView()
         
@@ -47,7 +48,7 @@ extension UsersViewController {
     
     @IBAction func createNewPost(_ sender: Any) {
         
-        self.presenter?.goToCreateNewPost()
+        self.presenter?.goToCreateNewPost(delegate: self)
     }
 }
 
@@ -138,6 +139,11 @@ extension UsersViewController: UsersViewProtocol {
         self.presenter?.setUserSelection(userId: userId)
         self.usersTableView.reloadData()
     }
+    
+    func showNewUserPost() {
+        
+        self.usersTableView.reloadData()
+    }
 }
 
 extension UsersViewController: UsersViewDelegate {
@@ -145,5 +151,10 @@ extension UsersViewController: UsersViewDelegate {
     func callGetUserLists(userId: Int64) {
         
         self.presenter?.getUserPostsIfEmpty(userId: userId)
+    }
+    
+    func callGetNewCreatedPost(userPost: UserPostResponse) {
+        
+        self.presenter?.setNewPost(userPost: userPost)
     }
 }

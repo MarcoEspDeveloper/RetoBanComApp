@@ -9,5 +9,6 @@ import Foundation
 
 protocol CreateNewPostViewProtocol: AnyObject {
     
-    
+    func showNewPostToBack(userPost: UserPostResponse)
+    func showBasicAlert(title:String?, message: String?)
 }
