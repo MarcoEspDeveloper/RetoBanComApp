@@ -14,7 +14,11 @@ protocol UsersPresenterProtocol {
     func failGetUsersList(error: NSError)
     
     func getUserPostsList(userId: Int64)
-    func didGetUserPostsList(usersList: [UserPostResponse])
+    func didGetUserPostsList(userPostsList: [UserPostResponse])
     func failGetUserPostsList(error: NSError)
+    
+    func getUserPostsIfEmpty(userId: Int64)
+    func setUserSelection(userId: Int64)
+    
     func getUsers() -> [UserResponse]
 }

@@ -60,7 +60,7 @@ extension UsersViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        var user = self.presenter?.getUsers()[section]
+        let user = self.presenter?.getUsers()[section]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "UsersTableViewCell") as! UsersTableViewCell
         
@@ -72,17 +72,37 @@ extension UsersViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
+        if let user = self.presenter?.getUsers()[section], let isExpanded = user.isExpanded, isExpanded {
+            
+            return user.userPosts?.count ?? 0
+        }
+        
         return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        return UITableViewCell(frame: .zero)
+        if let isExpanded = self.presenter?.getUsers()[indexPath.section].isExpanded, isExpanded, let post = self.presenter?.getUsers()[indexPath.section].userPosts?[indexPath.row] {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "UserPostTableViewCell", for: indexPath) as! UserPostTableViewCell
+            cell.setupCell(postTitle: post.title, postDescription: post.body)
+            cell.selectionStyle = .none
+            
+            return cell
+        } else {
+            
+            return UITableViewCell(frame: .zero)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
         return 48
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return 131
     }
 }
 
@@ -108,8 +128,10 @@ extension UsersViewController: UsersViewProtocol {
         self.usersTableView.reloadData()
     }
     
-    func showUserPosts() {
+    func showUserPosts(userId: Int64) {
         
+        self.presenter?.setUserSelection(userId: userId)
+        self.usersTableView.reloadData()
     }
 }
 
@@ -117,6 +139,6 @@ extension UsersViewController: UsersViewDelegate {
     
     func callGetUserLists(userId: Int64) {
         
-        self.presenter?.getUserPostsList(userId: userId)
+        self.presenter?.getUserPostsIfEmpty(userId: userId)
     }
 }

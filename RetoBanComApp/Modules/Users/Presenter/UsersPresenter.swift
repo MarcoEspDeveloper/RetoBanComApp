@@ -42,22 +42,44 @@ class UsersPresenter: UsersPresenterProtocol {
         self.usersView.showBasicAlert(title: "Error", message: error.localizedDescription)
     }
     
-    func didGetUserPostsList(usersList: [UserPostResponse]) {
+    func didGetUserPostsList(userPostsList: [UserPostResponse]) {
         
-        if let userId = usersList.first?.userId {
+        if let userId = userPostsList.first?.userId, let index = self.usersList.firstIndex(where: { $0.id == userId }) {
             
-            if let index = self.usersList.firstIndex(where: { $0.id == userId }) {
-                
-                self.usersList[index].userPosts = usersList
-                
-                print("CANTIDAD DE POSTS DEL USUARIO \((self.usersList[index].name)!): \(self.usersList[index].userPosts?.count ?? 0)")
-            }
+            self.usersList[index].userPosts?.removeAll()
+            self.usersList[index].userPosts?.append(contentsOf: userPostsList)
+            
+            self.usersView.showUserPosts(userId: userId)
+            
+            //print("CANTIDAD DE POSTS DEL USUARIO \((self.usersList[index].name)!): \(self.usersList[index].userPosts?.count ?? 0)")
         }
     }
     
     func failGetUserPostsList(error: NSError) {
         
         self.usersView.showBasicAlert(title: "Error", message: error.localizedDescription)
+    }
+    
+    func getUserPostsIfEmpty(userId: Int64) {
+        
+        if let index = self.usersList.firstIndex(where: { $0.id == userId}) {
+            
+            if let userPosts = self.usersList[index].userPosts, userPosts.count < 1 {
+                
+                self.getUserPostsList(userId: userId)
+            } else {
+                
+                self.usersView.showUserPosts(userId: userId)
+            }
+        }
+    }
+    
+    func setUserSelection(userId: Int64) {
+        
+        if let index = self.usersList.firstIndex(where: { $0.id == userId }), let isExpanded = self.usersList[index].isExpanded {
+            
+            self.usersList[index].isExpanded = !isExpanded
+        }
     }
     
     func getUsers() -> [UserResponse] {

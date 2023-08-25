@@ -18,6 +18,35 @@ struct UserResponse: Decodable {
     var website: String?
     var company: CompanyUserResponse?
     var userPosts: [UserPostResponse]?
+    var isExpanded: Bool?
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case username
+        case email
+        case address
+        case phone
+        case website
+        case company
+        case userPosts
+        case isExpanded
+    }
+    
+    init(from decoder: Decoder) throws {
+        
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = try values.decodeIfPresent(Int64.self, forKey: .id)!
+        self.name = try values.decodeIfPresent(String.self, forKey: .name)!
+        self.username = try values.decodeIfPresent(String.self, forKey: .username)!
+        self.email = try values.decodeIfPresent(String.self, forKey: .email)!
+        self.address = try values.decodeIfPresent(AddressUserResponse.self, forKey: .address)!
+        self.phone = try values.decodeIfPresent(String.self, forKey: .phone)!
+        self.website = try values.decodeIfPresent(String.self, forKey: .website)!
+        self.company = try values.decodeIfPresent(CompanyUserResponse.self, forKey: .company)!
+        self.userPosts = []
+        self.isExpanded = false
+    }
 }
 
 struct GeoUserResponse: Decodable {

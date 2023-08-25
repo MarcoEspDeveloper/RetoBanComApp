@@ -44,7 +44,7 @@ class UsersInteractor: UsersInteractorProtocol {
             
             if let userPostsResponse = response {
                 
-                self.presenter?.didGetUserPostsList(usersList: userPostsResponse)
+                self.presenter?.didGetUserPostsList(userPostsList: userPostsResponse)
             }
             
             if let error = error {
