@@ -62,6 +62,14 @@
 		A974AC602A956DAA005E7974 /* NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A974ABBC2A956DAA005E7974 /* NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf */; };
 		A974AC612A956DAA005E7974 /* NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A974ABBD2A956DAA005E7974 /* NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf */; };
 		A9A2F1052A9680DA0057F39C /* UserPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2F1042A9680DA0057F39C /* UserPostResponse.swift */; };
+		A9AF4DA02A990A1900AB7391 /* UserPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF4D9F2A990A1900AB7391 /* UserPostRequest.swift */; };
+		A9AF4DA22A990EC500AB7391 /* CreateNewPostViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF4DA12A990EC500AB7391 /* CreateNewPostViewProtocol.swift */; };
+		A9AF4DA42A990F1800AB7391 /* CreateNewPostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF4DA32A990F1800AB7391 /* CreateNewPostInteractor.swift */; };
+		A9AF4DA62A990F4600AB7391 /* CreateNewPostInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF4DA52A990F4600AB7391 /* CreateNewPostInteractorProtocol.swift */; };
+		A9AF4DA82A99108F00AB7391 /* CreateNewPostPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF4DA72A99108F00AB7391 /* CreateNewPostPresenterProtocol.swift */; };
+		A9AF4DAA2A9910A000AB7391 /* CreateNewPostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF4DA92A9910A000AB7391 /* CreateNewPostPresenter.swift */; };
+		A9AF4DAC2A99130000AB7391 /* CreateNewPostRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF4DAB2A99130000AB7391 /* CreateNewPostRouterProtocol.swift */; };
+		A9AF4DAE2A99131500AB7391 /* CreateNewPostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF4DAD2A99131500AB7391 /* CreateNewPostRouter.swift */; };
 		A9DB56752A95720F00F36F64 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB56742A95720F00F36F64 /* UsersTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -140,6 +148,14 @@
 		A974ABBC2A956DAA005E7974 /* NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf"; sourceTree = "<group>"; };
 		A974ABBD2A956DAA005E7974 /* NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf"; sourceTree = "<group>"; };
 		A9A2F1042A9680DA0057F39C /* UserPostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostResponse.swift; sourceTree = "<group>"; };
+		A9AF4D9F2A990A1900AB7391 /* UserPostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostRequest.swift; sourceTree = "<group>"; };
+		A9AF4DA12A990EC500AB7391 /* CreateNewPostViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostViewProtocol.swift; sourceTree = "<group>"; };
+		A9AF4DA32A990F1800AB7391 /* CreateNewPostInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostInteractor.swift; sourceTree = "<group>"; };
+		A9AF4DA52A990F4600AB7391 /* CreateNewPostInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostInteractorProtocol.swift; sourceTree = "<group>"; };
+		A9AF4DA72A99108F00AB7391 /* CreateNewPostPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostPresenterProtocol.swift; sourceTree = "<group>"; };
+		A9AF4DA92A9910A000AB7391 /* CreateNewPostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostPresenter.swift; sourceTree = "<group>"; };
+		A9AF4DAB2A99130000AB7391 /* CreateNewPostRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostRouterProtocol.swift; sourceTree = "<group>"; };
+		A9AF4DAD2A99131500AB7391 /* CreateNewPostRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostRouter.swift; sourceTree = "<group>"; };
 		A9DB56742A95720F00F36F64 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -218,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				A95177AC2A95220900A9186B /* UserRequest.swift */,
+				A9AF4D9F2A990A1900AB7391 /* UserPostRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -308,6 +325,7 @@
 				A95177B62A9523B900A9186B /* UsersViewController.swift */,
 				A974AB072A95674E005E7974 /* UsersViewProtocol.swift */,
 				A90C2F312A983AF200E0357A /* CreateNewPostViewController.swift */,
+				A9AF4DA12A990EC500AB7391 /* CreateNewPostViewProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -408,7 +426,9 @@
 			isa = PBXGroup;
 			children = (
 				A974AB0D2A956775005E7974 /* UsersPresenter.swift */,
+				A9AF4DA92A9910A000AB7391 /* CreateNewPostPresenter.swift */,
 				A974AB0F2A956781005E7974 /* UsersPresenterProtocol.swift */,
+				A9AF4DA72A99108F00AB7391 /* CreateNewPostPresenterProtocol.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -418,6 +438,8 @@
 			children = (
 				A974AB092A95675A005E7974 /* UsersInteractor.swift */,
 				A974AB0B2A956769005E7974 /* UsersInteractorProtocol.swift */,
+				A9AF4DA32A990F1800AB7391 /* CreateNewPostInteractor.swift */,
+				A9AF4DA52A990F4600AB7391 /* CreateNewPostInteractorProtocol.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -427,6 +449,8 @@
 			children = (
 				A974AB112A9567DB005E7974 /* UsersRouter.swift */,
 				A974AB132A9567E7005E7974 /* UsersRouterProtocol.swift */,
+				A9AF4DAB2A99130000AB7391 /* CreateNewPostRouterProtocol.swift */,
+				A9AF4DAD2A99131500AB7391 /* CreateNewPostRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -612,32 +636,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9AF4DA62A990F4600AB7391 /* CreateNewPostInteractorProtocol.swift in Sources */,
 				A95177B12A95225100A9186B /* LoginInteractorProtocol.swift in Sources */,
 				A92728D22A944D0A00774B09 /* LoginPresenter.swift in Sources */,
 				A916605E2A92F878005798E3 /* Constants.swift in Sources */,
 				A974AB0A2A95675A005E7974 /* UsersInteractor.swift in Sources */,
 				A9DB56752A95720F00F36F64 /* UsersTableViewCell.swift in Sources */,
 				A974AB0C2A956769005E7974 /* UsersInteractorProtocol.swift in Sources */,
+				A9AF4DAA2A9910A000AB7391 /* CreateNewPostPresenter.swift in Sources */,
 				A95177B72A9523B900A9186B /* UsersViewController.swift in Sources */,
 				A95177B92A95244300A9186B /* LoginViewProtocol.swift in Sources */,
+				A9AF4DA22A990EC500AB7391 /* CreateNewPostViewProtocol.swift in Sources */,
 				A974AB142A9567E7005E7974 /* UsersRouterProtocol.swift in Sources */,
 				A9A2F1052A9680DA0057F39C /* UserPostResponse.swift in Sources */,
 				A9571F0C2A92E2CF00D0C308 /* LoginViewController.swift in Sources */,
 				A95177C92A952D6200A9186B /* LoginConfigurator.swift in Sources */,
 				A974AB102A956781005E7974 /* UsersPresenterProtocol.swift in Sources */,
 				A974AB162A9567F0005E7974 /* UsersConfigurator.swift in Sources */,
+				A9AF4DAC2A99130000AB7391 /* CreateNewPostRouterProtocol.swift in Sources */,
 				A9571F122A92E2CF00D0C308 /* RetoBanComApp.xcdatamodeld in Sources */,
 				A974AB122A9567DB005E7974 /* UsersRouter.swift in Sources */,
 				A95177C22A9525F400A9186B /* ConnectionManagerProtocol.swift in Sources */,
 				A974AB082A95674E005E7974 /* UsersViewProtocol.swift in Sources */,
+				A9AF4DA42A990F1800AB7391 /* CreateNewPostInteractor.swift in Sources */,
+				A9AF4DA82A99108F00AB7391 /* CreateNewPostPresenterProtocol.swift in Sources */,
 				A95177AD2A95220900A9186B /* UserRequest.swift in Sources */,
 				A9571F082A92E2CF00D0C308 /* AppDelegate.swift in Sources */,
 				A9571F0A2A92E2CF00D0C308 /* SceneDelegate.swift in Sources */,
+				A9AF4DAE2A99131500AB7391 /* CreateNewPostRouter.swift in Sources */,
 				A95177CB2A952D6D00A9186B /* LoginConfiguratorProtocol.swift in Sources */,
 				A95177C02A9525E500A9186B /* ConnectionManager.swift in Sources */,
 				A974AB0E2A956775005E7974 /* UsersPresenter.swift in Sources */,
 				A974AB182A956806005E7974 /* UsersConfiguratorProtocol.swift in Sources */,
 				A92728D42A944D2700774B09 /* LoginPresenterProtocol.swift in Sources */,
+				A9AF4DA02A990A1900AB7391 /* UserPostRequest.swift in Sources */,
 				A95177BB2A95257700A9186B /* LoginRouter.swift in Sources */,
 				A95177BD2A95258100A9186B /* LoginRouterProtocol.swift in Sources */,
 				A95177AF2A95224300A9186B /* LoginInteractor.swift in Sources */,
