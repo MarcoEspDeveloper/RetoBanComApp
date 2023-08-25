@@ -26,11 +26,13 @@ class CreateNewPostInteractor: CreateNewPostInteractorProtocol {
             
             if let postResponse = response {
                 
+                print("SE POSTEÓ CON ÉXITO: \(postResponse)")
                 // Llamar al presenter en caso de éxito
             }
             
             if let error = error {
                 
+                print("ERROR AL POSETAR NRO \(error.code): \(error.localizedDescription)")
                 // LLamar al presenter en caso de error
             }
         }

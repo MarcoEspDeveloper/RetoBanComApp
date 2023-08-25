@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class UsersRouter {
     
@@ -18,5 +19,11 @@ class UsersRouter {
 
 extension UsersRouter: UsersRouterProtocol {
     
-    
+    func goToCreateNewPost(originViewController: UsersViewController) {
+        
+        let storyboard = UIStoryboard(name: "Users", bundle: nil)
+        let destinyViewController = storyboard.instantiateViewController(withIdentifier: "CreateNewPostViewController") as! CreateNewPostViewController
+        
+        originViewController.navigationController?.present(destinyViewController, animated: false)
+    }
 }

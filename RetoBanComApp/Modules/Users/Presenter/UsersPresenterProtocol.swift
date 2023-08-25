@@ -21,4 +21,6 @@ protocol UsersPresenterProtocol {
     func setUserSelection(userId: Int64)
     
     func getUsers() -> [UserResponse]
+    
+    func goToCreateNewPost()
 }

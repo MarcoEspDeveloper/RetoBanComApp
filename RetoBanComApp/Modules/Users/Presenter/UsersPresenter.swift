@@ -86,4 +86,9 @@ class UsersPresenter: UsersPresenterProtocol {
         
         return self.usersList
     }
+    
+    func goToCreateNewPost() {
+        
+        self.router?.goToCreateNewPost(originViewController: usersView as! UsersViewController)
+    }
 }

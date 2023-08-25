@@ -9,5 +9,5 @@ import Foundation
 
 protocol CreateNewPostRouterProtocol {
     
-    
+    func goToBack(originViewController: CreateNewPostViewController)
 }

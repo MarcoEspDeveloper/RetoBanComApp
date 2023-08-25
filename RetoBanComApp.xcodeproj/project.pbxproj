@@ -70,6 +70,17 @@
 		A9AF4DAA2A9910A000AB7391 /* CreateNewPostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF4DA92A9910A000AB7391 /* CreateNewPostPresenter.swift */; };
 		A9AF4DAC2A99130000AB7391 /* CreateNewPostRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF4DAB2A99130000AB7391 /* CreateNewPostRouterProtocol.swift */; };
 		A9AF4DAE2A99131500AB7391 /* CreateNewPostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF4DAD2A99131500AB7391 /* CreateNewPostRouter.swift */; };
+		A9AF4DB92A9917C000AB7391 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9AF4DB02A9917BF00AB7391 /* Inter-Medium.ttf */; };
+		A9AF4DBA2A9917C000AB7391 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9AF4DB12A9917BF00AB7391 /* Inter-Bold.ttf */; };
+		A9AF4DBB2A9917C000AB7391 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9AF4DB22A9917BF00AB7391 /* Inter-Thin.ttf */; };
+		A9AF4DBC2A9917C000AB7391 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9AF4DB32A9917C000AB7391 /* Inter-SemiBold.ttf */; };
+		A9AF4DBD2A9917C000AB7391 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9AF4DB42A9917C000AB7391 /* Inter-Light.ttf */; };
+		A9AF4DBE2A9917C000AB7391 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9AF4DB52A9917C000AB7391 /* Inter-ExtraBold.ttf */; };
+		A9AF4DBF2A9917C000AB7391 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9AF4DB62A9917C000AB7391 /* Inter-ExtraLight.ttf */; };
+		A9AF4DC02A9917C000AB7391 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9AF4DB72A9917C000AB7391 /* Inter-Regular.ttf */; };
+		A9AF4DC12A9917C000AB7391 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9AF4DB82A9917C000AB7391 /* Inter-Black.ttf */; };
+		A9C14B872A991C3B000A38B0 /* CreateNewPostConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C14B862A991C3B000A38B0 /* CreateNewPostConfigurator.swift */; };
+		A9C14B892A991C49000A38B0 /* CreateNewPostConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C14B882A991C49000A38B0 /* CreateNewPostConfiguratorProtocol.swift */; };
 		A9DB56752A95720F00F36F64 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB56742A95720F00F36F64 /* UsersTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -156,6 +167,17 @@
 		A9AF4DA92A9910A000AB7391 /* CreateNewPostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostPresenter.swift; sourceTree = "<group>"; };
 		A9AF4DAB2A99130000AB7391 /* CreateNewPostRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostRouterProtocol.swift; sourceTree = "<group>"; };
 		A9AF4DAD2A99131500AB7391 /* CreateNewPostRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostRouter.swift; sourceTree = "<group>"; };
+		A9AF4DB02A9917BF00AB7391 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		A9AF4DB12A9917BF00AB7391 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		A9AF4DB22A9917BF00AB7391 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		A9AF4DB32A9917C000AB7391 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		A9AF4DB42A9917C000AB7391 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		A9AF4DB52A9917C000AB7391 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		A9AF4DB62A9917C000AB7391 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		A9AF4DB72A9917C000AB7391 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		A9AF4DB82A9917C000AB7391 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		A9C14B862A991C3B000A38B0 /* CreateNewPostConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostConfigurator.swift; sourceTree = "<group>"; };
+		A9C14B882A991C49000A38B0 /* CreateNewPostConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		A9DB56742A95720F00F36F64 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -299,6 +321,7 @@
 		A91660672A9304EC005798E3 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				A9AF4DAF2A9917B500AB7391 /* Inter */,
 				A974AB192A956DAA005E7974 /* Nunito_Sans */,
 				A96F62E22A931F78006B2DFD /* Roboto */,
 			);
@@ -426,8 +449,8 @@
 			isa = PBXGroup;
 			children = (
 				A974AB0D2A956775005E7974 /* UsersPresenter.swift */,
-				A9AF4DA92A9910A000AB7391 /* CreateNewPostPresenter.swift */,
 				A974AB0F2A956781005E7974 /* UsersPresenterProtocol.swift */,
+				A9AF4DA92A9910A000AB7391 /* CreateNewPostPresenter.swift */,
 				A9AF4DA72A99108F00AB7391 /* CreateNewPostPresenterProtocol.swift */,
 			);
 			path = Presenter;
@@ -449,8 +472,8 @@
 			children = (
 				A974AB112A9567DB005E7974 /* UsersRouter.swift */,
 				A974AB132A9567E7005E7974 /* UsersRouterProtocol.swift */,
-				A9AF4DAB2A99130000AB7391 /* CreateNewPostRouterProtocol.swift */,
 				A9AF4DAD2A99131500AB7391 /* CreateNewPostRouter.swift */,
+				A9AF4DAB2A99130000AB7391 /* CreateNewPostRouterProtocol.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -460,6 +483,8 @@
 			children = (
 				A974AB152A9567F0005E7974 /* UsersConfigurator.swift */,
 				A974AB172A956806005E7974 /* UsersConfiguratorProtocol.swift */,
+				A9C14B862A991C3B000A38B0 /* CreateNewPostConfigurator.swift */,
+				A9C14B882A991C49000A38B0 /* CreateNewPostConfiguratorProtocol.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -471,6 +496,22 @@
 				A974ABBD2A956DAA005E7974 /* NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf */,
 			);
 			path = Nunito_Sans;
+			sourceTree = "<group>";
+		};
+		A9AF4DAF2A9917B500AB7391 /* Inter */ = {
+			isa = PBXGroup;
+			children = (
+				A9AF4DB82A9917C000AB7391 /* Inter-Black.ttf */,
+				A9AF4DB12A9917BF00AB7391 /* Inter-Bold.ttf */,
+				A9AF4DB52A9917C000AB7391 /* Inter-ExtraBold.ttf */,
+				A9AF4DB62A9917C000AB7391 /* Inter-ExtraLight.ttf */,
+				A9AF4DB42A9917C000AB7391 /* Inter-Light.ttf */,
+				A9AF4DB02A9917BF00AB7391 /* Inter-Medium.ttf */,
+				A9AF4DB72A9917C000AB7391 /* Inter-Regular.ttf */,
+				A9AF4DB32A9917C000AB7391 /* Inter-SemiBold.ttf */,
+				A9AF4DB22A9917BF00AB7391 /* Inter-Thin.ttf */,
+			);
+			path = Inter;
 			sourceTree = "<group>";
 		};
 		A9DB56732A9571FB00F36F64 /* Cell */ = {
@@ -595,23 +636,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				A91660742A930506005798E3 /* Roboto-ThinItalic.ttf in Resources */,
+				A9AF4DC12A9917C000AB7391 /* Inter-Black.ttf in Resources */,
+				A9AF4DBD2A9917C000AB7391 /* Inter-Light.ttf in Resources */,
 				A916607D2A930506005798E3 /* Roboto-Bold.ttf in Resources */,
 				A916607E2A930506005798E3 /* Roboto-LightItalic.ttf in Resources */,
 				A916607B2A930506005798E3 /* Roboto-BoldItalic.ttf in Resources */,
 				A974AC602A956DAA005E7974 /* NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf in Resources */,
+				A9AF4DBF2A9917C000AB7391 /* Inter-ExtraLight.ttf in Resources */,
 				A9571F172A92E2CF00D0C308 /* LaunchScreen.storyboard in Resources */,
+				A9AF4DC02A9917C000AB7391 /* Inter-Regular.ttf in Resources */,
+				A9AF4DBA2A9917C000AB7391 /* Inter-Bold.ttf in Resources */,
 				A91660752A930506005798E3 /* Roboto-Italic.ttf in Resources */,
 				A91660772A930506005798E3 /* Roboto-Medium.ttf in Resources */,
 				A9571F142A92E2CF00D0C308 /* Assets.xcassets in Resources */,
+				A9AF4DBE2A9917C000AB7391 /* Inter-ExtraBold.ttf in Resources */,
 				A9571F0F2A92E2CF00D0C308 /* Login.storyboard in Resources */,
+				A9AF4DB92A9917C000AB7391 /* Inter-Medium.ttf in Resources */,
 				A95177B52A9522F800A9186B /* Users.storyboard in Resources */,
 				A916607C2A930506005798E3 /* Roboto-BlackItalic.ttf in Resources */,
+				A9AF4DBC2A9917C000AB7391 /* Inter-SemiBold.ttf in Resources */,
 				A91660782A930506005798E3 /* Roboto-Light.ttf in Resources */,
 				A91660792A930506005798E3 /* Roboto-MediumItalic.ttf in Resources */,
 				A916607F2A930506005798E3 /* Roboto-Regular.ttf in Resources */,
 				A974AC612A956DAA005E7974 /* NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf in Resources */,
 				A916607A2A930506005798E3 /* Roboto-Thin.ttf in Resources */,
 				A91660762A930506005798E3 /* Roboto-Black.ttf in Resources */,
+				A9AF4DBB2A9917C000AB7391 /* Inter-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,6 +689,7 @@
 				A9AF4DA62A990F4600AB7391 /* CreateNewPostInteractorProtocol.swift in Sources */,
 				A95177B12A95225100A9186B /* LoginInteractorProtocol.swift in Sources */,
 				A92728D22A944D0A00774B09 /* LoginPresenter.swift in Sources */,
+				A9C14B872A991C3B000A38B0 /* CreateNewPostConfigurator.swift in Sources */,
 				A916605E2A92F878005798E3 /* Constants.swift in Sources */,
 				A974AB0A2A95675A005E7974 /* UsersInteractor.swift in Sources */,
 				A9DB56752A95720F00F36F64 /* UsersTableViewCell.swift in Sources */,
@@ -662,6 +713,7 @@
 				A9AF4DA82A99108F00AB7391 /* CreateNewPostPresenterProtocol.swift in Sources */,
 				A95177AD2A95220900A9186B /* UserRequest.swift in Sources */,
 				A9571F082A92E2CF00D0C308 /* AppDelegate.swift in Sources */,
+				A9C14B892A991C49000A38B0 /* CreateNewPostConfiguratorProtocol.swift in Sources */,
 				A9571F0A2A92E2CF00D0C308 /* SceneDelegate.swift in Sources */,
 				A9AF4DAE2A99131500AB7391 /* CreateNewPostRouter.swift in Sources */,
 				A95177CB2A952D6D00A9186B /* LoginConfiguratorProtocol.swift in Sources */,

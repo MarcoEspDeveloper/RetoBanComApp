@@ -9,15 +9,25 @@ import Foundation
 
 class CreateNewPostPresenter: CreateNewPostPresenterProtocol {
     
-    weak var usersView: CreateNewPostViewProtocol!
+    weak var createNewPostView: CreateNewPostViewProtocol!
     var interactor: CreateNewPostInteractorProtocol?
     var router: CreateNewPostRouterProtocol?
     
     var usersList: [UserResponse] = []
     
     init(view: CreateNewPostViewProtocol) {
-        self.usersView = view
+        self.createNewPostView = view
         self.interactor = CreateNewPostInteractor(presenter: self)
-        self.router = CreateNewPostRouter(withView: self.usersView)
+        self.router = CreateNewPostRouter(withView: self.createNewPostView)
+    }
+    
+    func createNewPost(userId: Int64, postTitle: String, postDescription: String) {
+        
+        self.interactor?.postCreateNewPost(userId: userId, postTitle: postTitle, postDescription: postDescription)
+    }
+    
+    func goToBack() {
+        
+        self.router?.goToBack(originViewController: createNewPostView as! CreateNewPostViewController)
     }
 }

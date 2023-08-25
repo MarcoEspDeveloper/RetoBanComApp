@@ -8,5 +8,8 @@
 import Foundation
 
 protocol CreateNewPostPresenterProtocol {
+
+    func createNewPost(userId: Int64, postTitle: String, postDescription: String)
     
+    func goToBack()
 }

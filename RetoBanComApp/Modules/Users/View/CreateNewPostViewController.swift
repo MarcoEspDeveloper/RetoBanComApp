@@ -9,13 +9,21 @@ import UIKit
 
 class CreateNewPostViewController: UIViewController {
 
+    @IBOutlet weak var titleView: UIView!
+    @IBOutlet weak var descriptionView: UIView!
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var createPostButton: UIButton!
     
+    var presenter: CreateNewPostPresenterProtocol?
+    var configurator: CreateNewPostConfiguratorProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.configurator = CreateNewPostConfigurator()
+        configurator?.configure(viewController: self)
+        
         self.setupView()
     }
 
@@ -25,13 +33,13 @@ extension CreateNewPostViewController {
     
     func setupView() {
         
-        titleTextField.layer.cornerRadius = 4
-        titleTextField.layer.borderColor = UIColor.lightGray.cgColor
-        titleTextField.layer.borderWidth = 1
+        titleView.layer.cornerRadius = 4
+        titleView.layer.borderColor = UIColor.lightGray.cgColor
+        titleView.layer.borderWidth = 1
         
-        descriptionTextField.layer.cornerRadius = 4
-        descriptionTextField.layer.borderColor = UIColor.lightGray.cgColor
-        descriptionTextField.layer.borderWidth = 1
+        descriptionView.layer.cornerRadius = 4
+        descriptionView.layer.borderColor = UIColor.lightGray.cgColor
+        descriptionView.layer.borderWidth = 1
         
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleViewTap)))
         view.isUserInteractionEnabled = true
@@ -44,12 +52,12 @@ extension CreateNewPostViewController {
     
     @IBAction func tapCloseButton(_ sender: Any) {
         
-        
+        self.presenter?.goToBack()
     }
     
     @IBAction func tapCreatePostButton(_ sender: Any) {
         
-        
+        self.presenter?.createNewPost(userId: 1, postTitle: self.titleTextField.text ?? "", postDescription: descriptionTextField.text ?? "")
     }
 }
 
@@ -61,4 +69,9 @@ extension CreateNewPostViewController: UITextFieldDelegate {
         
         return false
     }
+}
+
+extension CreateNewPostViewController: CreateNewPostViewProtocol {
+    
+    
 }

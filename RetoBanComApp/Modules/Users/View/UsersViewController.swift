@@ -44,6 +44,11 @@ extension UsersViewController {
             self.usersTableView.sectionHeaderTopPadding = 0
         }
     }
+    
+    @IBAction func createNewPost(_ sender: Any) {
+        
+        self.presenter?.goToCreateNewPost()
+    }
 }
 
 extension UsersViewController: UITableViewDelegate, UITableViewDataSource {

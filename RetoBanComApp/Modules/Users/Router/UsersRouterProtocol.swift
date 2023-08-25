@@ -9,5 +9,5 @@ import Foundation
 
 protocol UsersRouterProtocol {
     
-    
+    func goToCreateNewPost(originViewController: UsersViewController)
 }
