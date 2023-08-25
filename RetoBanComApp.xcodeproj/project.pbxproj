@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A90C2F302A981D3600E0357A /* UserPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90C2F2F2A981D3600E0357A /* UserPostTableViewCell.swift */; };
+		A90C2F322A983AF200E0357A /* CreateNewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90C2F312A983AF200E0357A /* CreateNewPostViewController.swift */; };
 		A916605E2A92F878005798E3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A916605D2A92F878005798E3 /* Constants.swift */; };
 		A91660742A930506005798E3 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A91660682A930506005798E3 /* Roboto-ThinItalic.ttf */; };
 		A91660752A930506005798E3 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A91660692A930506005798E3 /* Roboto-Italic.ttf */; };
@@ -83,6 +84,7 @@
 
 /* Begin PBXFileReference section */
 		A90C2F2F2A981D3600E0357A /* UserPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostTableViewCell.swift; sourceTree = "<group>"; };
+		A90C2F312A983AF200E0357A /* CreateNewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostViewController.swift; sourceTree = "<group>"; };
 		A916605D2A92F878005798E3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A91660682A930506005798E3 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		A91660692A930506005798E3 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 				A9DB56732A9571FB00F36F64 /* Cell */,
 				A95177B62A9523B900A9186B /* UsersViewController.swift */,
 				A974AB072A95674E005E7974 /* UsersViewProtocol.swift */,
+				A90C2F312A983AF200E0357A /* CreateNewPostViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -638,6 +641,7 @@
 				A95177BB2A95257700A9186B /* LoginRouter.swift in Sources */,
 				A95177BD2A95258100A9186B /* LoginRouterProtocol.swift in Sources */,
 				A95177AF2A95224300A9186B /* LoginInteractor.swift in Sources */,
+				A90C2F322A983AF200E0357A /* CreateNewPostViewController.swift in Sources */,
 				A95177CD2A952F5900A9186B /* UserData.swift in Sources */,
 				A90C2F302A981D3600E0357A /* UserPostTableViewCell.swift in Sources */,
 				A95177C62A95272000A9186B /* UserResponse.swift in Sources */,
