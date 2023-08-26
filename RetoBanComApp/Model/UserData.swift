@@ -9,6 +9,6 @@ import Foundation
 
 struct UserData {
     
-    var email: String = "Admin"
+    var email: String = "admin@admin.com"
     var passwrd: String = "Password*123"
 }

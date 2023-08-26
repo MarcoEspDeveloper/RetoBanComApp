@@ -10,4 +10,9 @@ import Foundation
 protocol LoginPresenterProtocol {
     
     func goToValidateUser(userName: String, userPassword: String)
+    func saveUserEmail(email: String)
+    func getSavedUserEmail() -> String
+    func setEmailSave()
+    func setInitialSavedEmailStatus()
+    func getSavedEmailIndicatorStatus() -> Bool
 }
