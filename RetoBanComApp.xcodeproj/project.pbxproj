@@ -81,6 +81,7 @@
 		A9AF4DC12A9917C000AB7391 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9AF4DB82A9917C000AB7391 /* Inter-Black.ttf */; };
 		A9C14B872A991C3B000A38B0 /* CreateNewPostConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C14B862A991C3B000A38B0 /* CreateNewPostConfigurator.swift */; };
 		A9C14B892A991C49000A38B0 /* CreateNewPostConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C14B882A991C49000A38B0 /* CreateNewPostConfiguratorProtocol.swift */; };
+		A9D450742A9A754200071C7C /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D450732A9A754200071C7C /* Util.swift */; };
 		A9DB56752A95720F00F36F64 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB56742A95720F00F36F64 /* UsersTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -178,6 +179,7 @@
 		A9AF4DB82A9917C000AB7391 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
 		A9C14B862A991C3B000A38B0 /* CreateNewPostConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostConfigurator.swift; sourceTree = "<group>"; };
 		A9C14B882A991C49000A38B0 /* CreateNewPostConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostConfiguratorProtocol.swift; sourceTree = "<group>"; };
+		A9D450732A9A754200071C7C /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		A9DB56742A95720F00F36F64 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -398,6 +400,7 @@
 				A916605C2A92F866005798E3 /* Data */,
 				A916605B2A92F83A005798E3 /* Modules */,
 				A916605A2A92F833005798E3 /* Model */,
+				A9D450722A9A752800071C7C /* Util */,
 				A91660662A9304B4005798E3 /* Resources */,
 				A9571F072A92E2CF00D0C308 /* AppDelegate.swift */,
 				A9571F092A92E2CF00D0C308 /* SceneDelegate.swift */,
@@ -512,6 +515,14 @@
 				A9AF4DB22A9917BF00AB7391 /* Inter-Thin.ttf */,
 			);
 			path = Inter;
+			sourceTree = "<group>";
+		};
+		A9D450722A9A752800071C7C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A9D450732A9A754200071C7C /* Util.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		A9DB56732A9571FB00F36F64 /* Cell */ = {
@@ -697,6 +708,7 @@
 				A9AF4DAA2A9910A000AB7391 /* CreateNewPostPresenter.swift in Sources */,
 				A95177B72A9523B900A9186B /* UsersViewController.swift in Sources */,
 				A95177B92A95244300A9186B /* LoginViewProtocol.swift in Sources */,
+				A9D450742A9A754200071C7C /* Util.swift in Sources */,
 				A9AF4DA22A990EC500AB7391 /* CreateNewPostViewProtocol.swift in Sources */,
 				A974AB142A9567E7005E7974 /* UsersRouterProtocol.swift in Sources */,
 				A9A2F1052A9680DA0057F39C /* UserPostResponse.swift in Sources */,

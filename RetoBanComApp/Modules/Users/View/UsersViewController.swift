@@ -70,7 +70,7 @@ extension UsersViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "UsersTableViewCell") as! UsersTableViewCell
         
-        cell.setupCell(delegate: self, userId: user?.id, userName: user?.name)
+        cell.setupCell(delegate: self, userId: user?.id, userName: user?.name, index: section)
         cell.selectionStyle = .none
         
         return cell

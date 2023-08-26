@@ -20,6 +20,6 @@ extension CreateNewPostRouter: CreateNewPostRouterProtocol {
     
     func goToBack(originViewController: CreateNewPostViewController) {
         
-        originViewController.dismiss(animated: false)
+        originViewController.dismiss(animated: true)
     }
 }

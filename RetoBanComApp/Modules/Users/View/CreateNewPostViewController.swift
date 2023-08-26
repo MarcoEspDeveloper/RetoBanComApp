@@ -10,6 +10,7 @@ import MBProgressHUD
 
 class CreateNewPostViewController: UIViewController {
 
+    @IBOutlet weak var mainDialogView: UIView!
     @IBOutlet weak var titleView: UIView!
     @IBOutlet weak var descriptionView: UIView!
     @IBOutlet weak var titleTextField: UITextField!
@@ -35,6 +36,8 @@ class CreateNewPostViewController: UIViewController {
 extension CreateNewPostViewController {
     
     func setupView() {
+        
+        mainDialogView.layer.cornerRadius = 24
         
         titleView.layer.cornerRadius = 4
         titleView.layer.borderColor = UIColor.lightGray.cgColor

@@ -45,7 +45,7 @@ extension UsersTableViewCell {
         self.delegate?.callGetUserLists(userId: self.userId)
     }
     
-    func setupCell(delegate: UsersViewDelegate?, userId: Int64?, userName: String?) {
+    func setupCell(delegate: UsersViewDelegate?, userId: Int64?, userName: String?, index: Int) {
         
         self.delegate = delegate
         self.userId = userId ?? -1
@@ -53,5 +53,6 @@ extension UsersTableViewCell {
         
         self.loadingIndicator.stopAnimating()
         self.loadingIndicator.isHidden = true
+        self.contentView.backgroundColor = (index + 1) % 2 == 0 ? UIColor(hex: "F9FAFC") : .white
     }
 }

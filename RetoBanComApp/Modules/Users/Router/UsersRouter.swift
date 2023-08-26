@@ -25,6 +25,6 @@ extension UsersRouter: UsersRouterProtocol {
         let destinyViewController = storyboard.instantiateViewController(withIdentifier: "CreateNewPostViewController") as! CreateNewPostViewController
         destinyViewController.delegate = delegate
         
-        originViewController.navigationController?.present(destinyViewController, animated: false)
+        originViewController.navigationController?.present(destinyViewController, animated: true)
     }
 }
