@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passowrdView: UIView!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var saveEmailIndicatorView: UIView!
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var signWithGoogleButton: UIButton!
     
@@ -48,6 +49,12 @@ extension LoginViewController {
         
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleViewTap)))
         view.isUserInteractionEnabled = true
+        
+        self.emailTextField.text = self.presenter?.getSavedUserEmail()
+        
+        self.presenter?.setInitialSavedEmailStatus()
+        
+        self.saveEmailIndicatorView.backgroundColor = (self.presenter?.getSavedEmailIndicatorStatus())! ? UIColor(hex: "7C3AED") : .white
     }
     
     func showOrHidePass() {
@@ -64,6 +71,22 @@ extension LoginViewController {
     @IBAction func tapShowOrHidePassButton(_ sender: Any) {
         
         self.showOrHidePass()
+    }
+    
+    @IBAction func tapSaveEmail(_ sender: Any) {
+        
+        if let isEmailSaved = self.presenter?.getSavedEmailIndicatorStatus() {
+            
+            if isEmailSaved {
+                
+                self.saveEmailIndicatorView.backgroundColor = .white
+                self.presenter?.setEmailSave()
+            } else {
+                
+                self.saveEmailIndicatorView.backgroundColor = UIColor(hex: "7C3AED")
+                self.presenter?.setEmailSave()
+            }
+        }
     }
     
     @IBAction func tapLoginButton(_ sender: Any) {

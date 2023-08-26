@@ -15,4 +15,6 @@ enum Constants {
         static let usersUrl = "/users"
         static let postsUrl = "/posts"
     }
+    
+    static let saveEmailKey = "userEmail"
 }
