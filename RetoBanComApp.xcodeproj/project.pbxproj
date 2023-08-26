@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A90C2F302A981D3600E0357A /* UserPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90C2F2F2A981D3600E0357A /* UserPostTableViewCell.swift */; };
+		A90C2F322A983AF200E0357A /* CreateNewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90C2F312A983AF200E0357A /* CreateNewPostViewController.swift */; };
 		A916605E2A92F878005798E3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A916605D2A92F878005798E3 /* Constants.swift */; };
 		A91660742A930506005798E3 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A91660682A930506005798E3 /* Roboto-ThinItalic.ttf */; };
 		A91660752A930506005798E3 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A91660692A930506005798E3 /* Roboto-Italic.ttf */; };
@@ -48,6 +50,39 @@
 		A9571F2E2A92E2D000D0C308 /* RetoBanComAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9571F2D2A92E2D000D0C308 /* RetoBanComAppUITestsLaunchTests.swift */; };
 		A9571F3C2A92E46B00D0C308 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A9571F3B2A92E46B00D0C308 /* Alamofire */; };
 		A9571F3F2A92E50000D0C308 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = A9571F3E2A92E50000D0C308 /* MBProgressHUD */; };
+		A974AB082A95674E005E7974 /* UsersViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A974AB072A95674E005E7974 /* UsersViewProtocol.swift */; };
+		A974AB0A2A95675A005E7974 /* UsersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A974AB092A95675A005E7974 /* UsersInteractor.swift */; };
+		A974AB0C2A956769005E7974 /* UsersInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A974AB0B2A956769005E7974 /* UsersInteractorProtocol.swift */; };
+		A974AB0E2A956775005E7974 /* UsersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A974AB0D2A956775005E7974 /* UsersPresenter.swift */; };
+		A974AB102A956781005E7974 /* UsersPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A974AB0F2A956781005E7974 /* UsersPresenterProtocol.swift */; };
+		A974AB122A9567DB005E7974 /* UsersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A974AB112A9567DB005E7974 /* UsersRouter.swift */; };
+		A974AB142A9567E7005E7974 /* UsersRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A974AB132A9567E7005E7974 /* UsersRouterProtocol.swift */; };
+		A974AB162A9567F0005E7974 /* UsersConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A974AB152A9567F0005E7974 /* UsersConfigurator.swift */; };
+		A974AB182A956806005E7974 /* UsersConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A974AB172A956806005E7974 /* UsersConfiguratorProtocol.swift */; };
+		A974AC602A956DAA005E7974 /* NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A974ABBC2A956DAA005E7974 /* NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf */; };
+		A974AC612A956DAA005E7974 /* NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A974ABBD2A956DAA005E7974 /* NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf */; };
+		A9A2F1052A9680DA0057F39C /* UserPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2F1042A9680DA0057F39C /* UserPostResponse.swift */; };
+		A9AF4DA02A990A1900AB7391 /* UserPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF4D9F2A990A1900AB7391 /* UserPostRequest.swift */; };
+		A9AF4DA22A990EC500AB7391 /* CreateNewPostViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF4DA12A990EC500AB7391 /* CreateNewPostViewProtocol.swift */; };
+		A9AF4DA42A990F1800AB7391 /* CreateNewPostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF4DA32A990F1800AB7391 /* CreateNewPostInteractor.swift */; };
+		A9AF4DA62A990F4600AB7391 /* CreateNewPostInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF4DA52A990F4600AB7391 /* CreateNewPostInteractorProtocol.swift */; };
+		A9AF4DA82A99108F00AB7391 /* CreateNewPostPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF4DA72A99108F00AB7391 /* CreateNewPostPresenterProtocol.swift */; };
+		A9AF4DAA2A9910A000AB7391 /* CreateNewPostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF4DA92A9910A000AB7391 /* CreateNewPostPresenter.swift */; };
+		A9AF4DAC2A99130000AB7391 /* CreateNewPostRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF4DAB2A99130000AB7391 /* CreateNewPostRouterProtocol.swift */; };
+		A9AF4DAE2A99131500AB7391 /* CreateNewPostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF4DAD2A99131500AB7391 /* CreateNewPostRouter.swift */; };
+		A9AF4DB92A9917C000AB7391 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9AF4DB02A9917BF00AB7391 /* Inter-Medium.ttf */; };
+		A9AF4DBA2A9917C000AB7391 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9AF4DB12A9917BF00AB7391 /* Inter-Bold.ttf */; };
+		A9AF4DBB2A9917C000AB7391 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9AF4DB22A9917BF00AB7391 /* Inter-Thin.ttf */; };
+		A9AF4DBC2A9917C000AB7391 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9AF4DB32A9917C000AB7391 /* Inter-SemiBold.ttf */; };
+		A9AF4DBD2A9917C000AB7391 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9AF4DB42A9917C000AB7391 /* Inter-Light.ttf */; };
+		A9AF4DBE2A9917C000AB7391 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9AF4DB52A9917C000AB7391 /* Inter-ExtraBold.ttf */; };
+		A9AF4DBF2A9917C000AB7391 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9AF4DB62A9917C000AB7391 /* Inter-ExtraLight.ttf */; };
+		A9AF4DC02A9917C000AB7391 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9AF4DB72A9917C000AB7391 /* Inter-Regular.ttf */; };
+		A9AF4DC12A9917C000AB7391 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9AF4DB82A9917C000AB7391 /* Inter-Black.ttf */; };
+		A9C14B872A991C3B000A38B0 /* CreateNewPostConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C14B862A991C3B000A38B0 /* CreateNewPostConfigurator.swift */; };
+		A9C14B892A991C49000A38B0 /* CreateNewPostConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C14B882A991C49000A38B0 /* CreateNewPostConfiguratorProtocol.swift */; };
+		A9D450742A9A754200071C7C /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D450732A9A754200071C7C /* Util.swift */; };
+		A9DB56752A95720F00F36F64 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB56742A95720F00F36F64 /* UsersTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +103,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A90C2F2F2A981D3600E0357A /* UserPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostTableViewCell.swift; sourceTree = "<group>"; };
+		A90C2F312A983AF200E0357A /* CreateNewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostViewController.swift; sourceTree = "<group>"; };
 		A916605D2A92F878005798E3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A91660682A930506005798E3 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		A91660692A930506005798E3 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
@@ -111,6 +148,39 @@
 		A9571F272A92E2D000D0C308 /* RetoBanComAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetoBanComAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9571F2B2A92E2D000D0C308 /* RetoBanComAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetoBanComAppUITests.swift; sourceTree = "<group>"; };
 		A9571F2D2A92E2D000D0C308 /* RetoBanComAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetoBanComAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A974AB072A95674E005E7974 /* UsersViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewProtocol.swift; sourceTree = "<group>"; };
+		A974AB092A95675A005E7974 /* UsersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersInteractor.swift; sourceTree = "<group>"; };
+		A974AB0B2A956769005E7974 /* UsersInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersInteractorProtocol.swift; sourceTree = "<group>"; };
+		A974AB0D2A956775005E7974 /* UsersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersPresenter.swift; sourceTree = "<group>"; };
+		A974AB0F2A956781005E7974 /* UsersPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersPresenterProtocol.swift; sourceTree = "<group>"; };
+		A974AB112A9567DB005E7974 /* UsersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRouter.swift; sourceTree = "<group>"; };
+		A974AB132A9567E7005E7974 /* UsersRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRouterProtocol.swift; sourceTree = "<group>"; };
+		A974AB152A9567F0005E7974 /* UsersConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersConfigurator.swift; sourceTree = "<group>"; };
+		A974AB172A956806005E7974 /* UsersConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersConfiguratorProtocol.swift; sourceTree = "<group>"; };
+		A974ABBC2A956DAA005E7974 /* NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf"; sourceTree = "<group>"; };
+		A974ABBD2A956DAA005E7974 /* NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf"; sourceTree = "<group>"; };
+		A9A2F1042A9680DA0057F39C /* UserPostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostResponse.swift; sourceTree = "<group>"; };
+		A9AF4D9F2A990A1900AB7391 /* UserPostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostRequest.swift; sourceTree = "<group>"; };
+		A9AF4DA12A990EC500AB7391 /* CreateNewPostViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostViewProtocol.swift; sourceTree = "<group>"; };
+		A9AF4DA32A990F1800AB7391 /* CreateNewPostInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostInteractor.swift; sourceTree = "<group>"; };
+		A9AF4DA52A990F4600AB7391 /* CreateNewPostInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostInteractorProtocol.swift; sourceTree = "<group>"; };
+		A9AF4DA72A99108F00AB7391 /* CreateNewPostPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostPresenterProtocol.swift; sourceTree = "<group>"; };
+		A9AF4DA92A9910A000AB7391 /* CreateNewPostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostPresenter.swift; sourceTree = "<group>"; };
+		A9AF4DAB2A99130000AB7391 /* CreateNewPostRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostRouterProtocol.swift; sourceTree = "<group>"; };
+		A9AF4DAD2A99131500AB7391 /* CreateNewPostRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostRouter.swift; sourceTree = "<group>"; };
+		A9AF4DB02A9917BF00AB7391 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		A9AF4DB12A9917BF00AB7391 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		A9AF4DB22A9917BF00AB7391 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		A9AF4DB32A9917C000AB7391 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		A9AF4DB42A9917C000AB7391 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		A9AF4DB52A9917C000AB7391 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		A9AF4DB62A9917C000AB7391 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		A9AF4DB72A9917C000AB7391 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		A9AF4DB82A9917C000AB7391 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		A9C14B862A991C3B000A38B0 /* CreateNewPostConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostConfigurator.swift; sourceTree = "<group>"; };
+		A9C14B882A991C49000A38B0 /* CreateNewPostConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostConfiguratorProtocol.swift; sourceTree = "<group>"; };
+		A9D450732A9A754200071C7C /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		A9DB56742A95720F00F36F64 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +233,6 @@
 			children = (
 				A95177B22A9522A800A9186B /* Users */,
 				A91660612A92F8C2005798E3 /* Login */,
-				A9571F0D2A92E2CF00D0C308 /* Login.storyboard */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -179,6 +248,7 @@
 		A916605F2A92F88F005798E3 /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				A9A2F1042A9680DA0057F39C /* UserPostResponse.swift */,
 				A95177C52A95272000A9186B /* UserResponse.swift */,
 			);
 			path = Response;
@@ -188,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				A95177AC2A95220900A9186B /* UserRequest.swift */,
+				A9AF4D9F2A990A1900AB7391 /* UserPostRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -200,6 +271,7 @@
 				A91660632A92F8D5005798E3 /* Presenter */,
 				A91660642A92F8DE005798E3 /* Interactor */,
 				A91660622A92F8D0005798E3 /* View */,
+				A9571F0D2A92E2CF00D0C308 /* Login.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -251,6 +323,8 @@
 		A91660672A9304EC005798E3 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				A9AF4DAF2A9917B500AB7391 /* Inter */,
+				A974AB192A956DAA005E7974 /* Nunito_Sans */,
 				A96F62E22A931F78006B2DFD /* Roboto */,
 			);
 			path = Font;
@@ -259,6 +333,10 @@
 		A95177B22A9522A800A9186B /* Users */ = {
 			isa = PBXGroup;
 			children = (
+				A974AB062A956729005E7974 /* Configurator */,
+				A974AB052A95670E005E7974 /* Router */,
+				A974AB032A9566E7005E7974 /* Presenter */,
+				A974AB042A9566FC005E7974 /* Interactor */,
 				A95177B32A9522C000A9186B /* View */,
 				A95177B42A9522F800A9186B /* Users.storyboard */,
 			);
@@ -268,7 +346,11 @@
 		A95177B32A9522C000A9186B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A9DB56732A9571FB00F36F64 /* Cell */,
 				A95177B62A9523B900A9186B /* UsersViewController.swift */,
+				A974AB072A95674E005E7974 /* UsersViewProtocol.swift */,
+				A90C2F312A983AF200E0357A /* CreateNewPostViewController.swift */,
+				A9AF4DA12A990EC500AB7391 /* CreateNewPostViewProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -318,6 +400,7 @@
 				A916605C2A92F866005798E3 /* Data */,
 				A916605B2A92F83A005798E3 /* Modules */,
 				A916605A2A92F833005798E3 /* Model */,
+				A9D450722A9A752800071C7C /* Util */,
 				A91660662A9304B4005798E3 /* Resources */,
 				A9571F072A92E2CF00D0C308 /* AppDelegate.swift */,
 				A9571F092A92E2CF00D0C308 /* SceneDelegate.swift */,
@@ -363,6 +446,92 @@
 				A91660682A930506005798E3 /* Roboto-ThinItalic.ttf */,
 			);
 			path = Roboto;
+			sourceTree = "<group>";
+		};
+		A974AB032A9566E7005E7974 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A974AB0D2A956775005E7974 /* UsersPresenter.swift */,
+				A974AB0F2A956781005E7974 /* UsersPresenterProtocol.swift */,
+				A9AF4DA92A9910A000AB7391 /* CreateNewPostPresenter.swift */,
+				A9AF4DA72A99108F00AB7391 /* CreateNewPostPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A974AB042A9566FC005E7974 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A974AB092A95675A005E7974 /* UsersInteractor.swift */,
+				A974AB0B2A956769005E7974 /* UsersInteractorProtocol.swift */,
+				A9AF4DA32A990F1800AB7391 /* CreateNewPostInteractor.swift */,
+				A9AF4DA52A990F4600AB7391 /* CreateNewPostInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A974AB052A95670E005E7974 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A974AB112A9567DB005E7974 /* UsersRouter.swift */,
+				A974AB132A9567E7005E7974 /* UsersRouterProtocol.swift */,
+				A9AF4DAD2A99131500AB7391 /* CreateNewPostRouter.swift */,
+				A9AF4DAB2A99130000AB7391 /* CreateNewPostRouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A974AB062A956729005E7974 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				A974AB152A9567F0005E7974 /* UsersConfigurator.swift */,
+				A974AB172A956806005E7974 /* UsersConfiguratorProtocol.swift */,
+				A9C14B862A991C3B000A38B0 /* CreateNewPostConfigurator.swift */,
+				A9C14B882A991C49000A38B0 /* CreateNewPostConfiguratorProtocol.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		A974AB192A956DAA005E7974 /* Nunito_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				A974ABBC2A956DAA005E7974 /* NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf */,
+				A974ABBD2A956DAA005E7974 /* NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf */,
+			);
+			path = Nunito_Sans;
+			sourceTree = "<group>";
+		};
+		A9AF4DAF2A9917B500AB7391 /* Inter */ = {
+			isa = PBXGroup;
+			children = (
+				A9AF4DB82A9917C000AB7391 /* Inter-Black.ttf */,
+				A9AF4DB12A9917BF00AB7391 /* Inter-Bold.ttf */,
+				A9AF4DB52A9917C000AB7391 /* Inter-ExtraBold.ttf */,
+				A9AF4DB62A9917C000AB7391 /* Inter-ExtraLight.ttf */,
+				A9AF4DB42A9917C000AB7391 /* Inter-Light.ttf */,
+				A9AF4DB02A9917BF00AB7391 /* Inter-Medium.ttf */,
+				A9AF4DB72A9917C000AB7391 /* Inter-Regular.ttf */,
+				A9AF4DB32A9917C000AB7391 /* Inter-SemiBold.ttf */,
+				A9AF4DB22A9917BF00AB7391 /* Inter-Thin.ttf */,
+			);
+			path = Inter;
+			sourceTree = "<group>";
+		};
+		A9D450722A9A752800071C7C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A9D450732A9A754200071C7C /* Util.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A9DB56732A9571FB00F36F64 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A9DB56742A95720F00F36F64 /* UsersTableViewCell.swift */,
+				A90C2F2F2A981D3600E0357A /* UserPostTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,21 +647,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				A91660742A930506005798E3 /* Roboto-ThinItalic.ttf in Resources */,
+				A9AF4DC12A9917C000AB7391 /* Inter-Black.ttf in Resources */,
+				A9AF4DBD2A9917C000AB7391 /* Inter-Light.ttf in Resources */,
 				A916607D2A930506005798E3 /* Roboto-Bold.ttf in Resources */,
 				A916607E2A930506005798E3 /* Roboto-LightItalic.ttf in Resources */,
 				A916607B2A930506005798E3 /* Roboto-BoldItalic.ttf in Resources */,
+				A974AC602A956DAA005E7974 /* NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf in Resources */,
+				A9AF4DBF2A9917C000AB7391 /* Inter-ExtraLight.ttf in Resources */,
 				A9571F172A92E2CF00D0C308 /* LaunchScreen.storyboard in Resources */,
+				A9AF4DC02A9917C000AB7391 /* Inter-Regular.ttf in Resources */,
+				A9AF4DBA2A9917C000AB7391 /* Inter-Bold.ttf in Resources */,
 				A91660752A930506005798E3 /* Roboto-Italic.ttf in Resources */,
 				A91660772A930506005798E3 /* Roboto-Medium.ttf in Resources */,
 				A9571F142A92E2CF00D0C308 /* Assets.xcassets in Resources */,
+				A9AF4DBE2A9917C000AB7391 /* Inter-ExtraBold.ttf in Resources */,
 				A9571F0F2A92E2CF00D0C308 /* Login.storyboard in Resources */,
+				A9AF4DB92A9917C000AB7391 /* Inter-Medium.ttf in Resources */,
 				A95177B52A9522F800A9186B /* Users.storyboard in Resources */,
 				A916607C2A930506005798E3 /* Roboto-BlackItalic.ttf in Resources */,
+				A9AF4DBC2A9917C000AB7391 /* Inter-SemiBold.ttf in Resources */,
 				A91660782A930506005798E3 /* Roboto-Light.ttf in Resources */,
 				A91660792A930506005798E3 /* Roboto-MediumItalic.ttf in Resources */,
 				A916607F2A930506005798E3 /* Roboto-Regular.ttf in Resources */,
+				A974AC612A956DAA005E7974 /* NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf in Resources */,
 				A916607A2A930506005798E3 /* Roboto-Thin.ttf in Resources */,
 				A91660762A930506005798E3 /* Roboto-Black.ttf in Resources */,
+				A9AF4DBB2A9917C000AB7391 /* Inter-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,25 +697,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9AF4DA62A990F4600AB7391 /* CreateNewPostInteractorProtocol.swift in Sources */,
 				A95177B12A95225100A9186B /* LoginInteractorProtocol.swift in Sources */,
 				A92728D22A944D0A00774B09 /* LoginPresenter.swift in Sources */,
+				A9C14B872A991C3B000A38B0 /* CreateNewPostConfigurator.swift in Sources */,
 				A916605E2A92F878005798E3 /* Constants.swift in Sources */,
+				A974AB0A2A95675A005E7974 /* UsersInteractor.swift in Sources */,
+				A9DB56752A95720F00F36F64 /* UsersTableViewCell.swift in Sources */,
+				A974AB0C2A956769005E7974 /* UsersInteractorProtocol.swift in Sources */,
+				A9AF4DAA2A9910A000AB7391 /* CreateNewPostPresenter.swift in Sources */,
 				A95177B72A9523B900A9186B /* UsersViewController.swift in Sources */,
 				A95177B92A95244300A9186B /* LoginViewProtocol.swift in Sources */,
+				A9D450742A9A754200071C7C /* Util.swift in Sources */,
+				A9AF4DA22A990EC500AB7391 /* CreateNewPostViewProtocol.swift in Sources */,
+				A974AB142A9567E7005E7974 /* UsersRouterProtocol.swift in Sources */,
+				A9A2F1052A9680DA0057F39C /* UserPostResponse.swift in Sources */,
 				A9571F0C2A92E2CF00D0C308 /* LoginViewController.swift in Sources */,
 				A95177C92A952D6200A9186B /* LoginConfigurator.swift in Sources */,
+				A974AB102A956781005E7974 /* UsersPresenterProtocol.swift in Sources */,
+				A974AB162A9567F0005E7974 /* UsersConfigurator.swift in Sources */,
+				A9AF4DAC2A99130000AB7391 /* CreateNewPostRouterProtocol.swift in Sources */,
 				A9571F122A92E2CF00D0C308 /* RetoBanComApp.xcdatamodeld in Sources */,
+				A974AB122A9567DB005E7974 /* UsersRouter.swift in Sources */,
 				A95177C22A9525F400A9186B /* ConnectionManagerProtocol.swift in Sources */,
+				A974AB082A95674E005E7974 /* UsersViewProtocol.swift in Sources */,
+				A9AF4DA42A990F1800AB7391 /* CreateNewPostInteractor.swift in Sources */,
+				A9AF4DA82A99108F00AB7391 /* CreateNewPostPresenterProtocol.swift in Sources */,
 				A95177AD2A95220900A9186B /* UserRequest.swift in Sources */,
 				A9571F082A92E2CF00D0C308 /* AppDelegate.swift in Sources */,
+				A9C14B892A991C49000A38B0 /* CreateNewPostConfiguratorProtocol.swift in Sources */,
 				A9571F0A2A92E2CF00D0C308 /* SceneDelegate.swift in Sources */,
+				A9AF4DAE2A99131500AB7391 /* CreateNewPostRouter.swift in Sources */,
 				A95177CB2A952D6D00A9186B /* LoginConfiguratorProtocol.swift in Sources */,
 				A95177C02A9525E500A9186B /* ConnectionManager.swift in Sources */,
+				A974AB0E2A956775005E7974 /* UsersPresenter.swift in Sources */,
+				A974AB182A956806005E7974 /* UsersConfiguratorProtocol.swift in Sources */,
 				A92728D42A944D2700774B09 /* LoginPresenterProtocol.swift in Sources */,
+				A9AF4DA02A990A1900AB7391 /* UserPostRequest.swift in Sources */,
 				A95177BB2A95257700A9186B /* LoginRouter.swift in Sources */,
 				A95177BD2A95258100A9186B /* LoginRouterProtocol.swift in Sources */,
 				A95177AF2A95224300A9186B /* LoginInteractor.swift in Sources */,
+				A90C2F322A983AF200E0357A /* CreateNewPostViewController.swift in Sources */,
 				A95177CD2A952F5900A9186B /* UserData.swift in Sources */,
+				A90C2F302A981D3600E0357A /* UserPostTableViewCell.swift in Sources */,
 				A95177C62A95272000A9186B /* UserResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
